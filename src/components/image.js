@@ -1,7 +1,3 @@
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
-
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
  * images with lazy loading and reduced file sizes. The image is loaded using a
@@ -13,20 +9,43 @@ import Img from 'gatsby-image';
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Image = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "images/icon.svg" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+import React from 'react';
+import Img from 'gatsby-image';
+import { StaticQuery, graphql } from 'gatsby';
+
+function renderImage(file) {
+  return <Img fluid={file.node.childImageSharp.fluid} />;
+}
+
+const MyImg = function(props) {
+  return (
+    <StaticQuery
+      query={graphql`
+        query {
+          images: allFile(filter: { sourceInstanceName: { eq: "images" } }) {
+            edges {
+              node {
+                extension
+                relativePath
+                childImageSharp {
+                  fluid(maxWidth: 1000) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
           }
         }
-      }
-    }
-  `);
-
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />;
+      `}
+      render={data => {
+        const image = data.images.edges.find(
+          image =>
+            image.node.relativePath === 'soraya-garcia-qLrn5RxoAEw-unsplash.jpg'
+        );
+        return renderImage(image);
+      }}
+    />
+  );
 };
 
-export default Image;
+export default MyImg;
