@@ -39,8 +39,6 @@ const IndexPage = props => {
     <Layout>
       <SEO title="Home" />
       <div>
-        <h1>Amazing Pandas Eating Things</h1>
-        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <PostPreview
             key={node.id}

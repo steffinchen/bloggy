@@ -19,11 +19,11 @@ const PostPreview = ({ slug, title, date, excerpt, image }) => {
     >
       <StyledLink to={slug}>
         <Img fluid={image.childImageSharp.fluid} />
-        <StyledHeading as="h3" fontFamily="heading" fontSize="3">
+        <Heading as="h3" fontFamily="heading" fontSize="3">
           {title}
-        </StyledHeading>
+        </Heading>
         <Text fontSize={0}>
-          <StyledDate>{date}</StyledDate>
+          <div>{date}</div>
           <p>{excerpt}</p>
         </Text>
       </StyledLink>
@@ -31,13 +31,9 @@ const PostPreview = ({ slug, title, date, excerpt, image }) => {
   );
 };
 
-const StyledDate = styled.div``;
-
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: black;
 `;
-
-const StyledHeading = styled(Heading)``;
 
 export default PostPreview;

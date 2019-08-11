@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 
 import Header from './header';
+import NavBar from './nav-bar';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,6 +26,7 @@ const Layout = ({ children }) => {
         />
       </Helmet>
       <Header siteTitle={data.site.siteMetadata.title} />
+      <NavBar />
       <div>
         <main>{children}</main>
         <footer>
