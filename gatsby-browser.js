@@ -6,8 +6,12 @@
 
 import React from 'react';
 import theme from './src/common/theme';
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import 'semantic-ui-css/semantic.min.css';
+import {
+  createGlobalStyle,
+  ThemeProvider as SCThemeProvider,
+} from 'styled-components';
+import { ThemeProvider as EThemeProvider } from 'emotion-theming';
+import preset from '@rebass/preset';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -18,11 +22,13 @@ const GlobalStyle = createGlobalStyle`
 
 export const wrapRootElement = ({ element }) => {
   return (
-    <ThemeProvider theme={theme}>
-      <React.Fragment>
-        {element}
-        <GlobalStyle />
-      </React.Fragment>
-    </ThemeProvider>
+    <SCThemeProvider theme={theme}>
+      <EThemeProvider theme={preset}>
+        <React.Fragment>
+          {element}
+          <GlobalStyle />
+        </React.Fragment>
+      </EThemeProvider>
+    </SCThemeProvider>
   );
 };

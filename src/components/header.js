@@ -23,6 +23,7 @@ const StyledHeader = styled.header`
 const Title = styled.h1`
   font-family: 'Kaushan Script', cursive;
   font-size: 2em;
+  text-decoration: none;
   & a {
     color: white;
   }

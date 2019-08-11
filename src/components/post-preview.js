@@ -7,9 +7,11 @@ import Img from 'gatsby-image';
 const PostPreview = ({ slug, title, date, excerpt, image }) => {
   return (
     <Card
-      p={10}
-      borderRadius="5px"
-      boxShadow="0 0 16px rgba(0, 0, 0, .25)"
+      sx={{
+        p: 10,
+        borderRadius: 5,
+        boxShadow: '0 0 16px rgba(0, 0, 0, .25)',
+      }}
       width={[
         1, // 100% width on small screens
         1 / 2, // 50% width from the next breakpoint and up
