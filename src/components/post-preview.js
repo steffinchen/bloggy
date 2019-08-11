@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import { Card, Heading, Text, Image } from 'rebass';
-import GImage from './image';
+import { Card, Heading, Text } from 'rebass';
+import Img from 'gatsby-image';
 
 const PostPreview = ({ slug, title, date, excerpt, image }) => {
   return (
@@ -17,29 +17,27 @@ const PostPreview = ({ slug, title, date, excerpt, image }) => {
         1 / 4, // 25% width for all larger breakpoints
       ]}
     >
-      <Image src={'../images/' + image} />
-      <GImage name={image} />
-      <Link to={slug}>
-        <Heading as="h3">{title}</Heading>
+      <StyledLink to={slug}>
+        <Img fluid={image.childImageSharp.fluid} />
+        <StyledHeading as="h3" fontFamily="heading" fontSize="3">
+          {title}
+        </StyledHeading>
         <Text fontSize={0}>
           <StyledDate>{date}</StyledDate>
           <p>{excerpt}</p>
         </Text>
-      </Link>
+      </StyledLink>
     </Card>
   );
 };
 
 const StyledDate = styled.div``;
 
-// const Box = styled.div`
-//   border: 1px solid grey;
-//   -moz-border-radius: 10px;
-//   -webkit-border-radius: 10px;
-//   border-radius: 10px;
-//   margin: 10px;
-//   padding: 10px;
-//   max-width: 200px;
-// `;
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: black;
+`;
+
+const StyledHeading = styled(Heading)``;
 
 export default PostPreview;

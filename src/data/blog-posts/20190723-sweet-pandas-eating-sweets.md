@@ -1,7 +1,7 @@
 ---
 title: 'Sweet Pandas Eating Sweets'
 date: '2017-08-10'
-image: 'soraya-garcia-qLrn5RxoAEw-unsplash.jpg'
+image: '../../images/soraya-garcia-qLrn5RxoAEw-unsplash.jpg'
 ---
 
 Pandas are really sweet.
