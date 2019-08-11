@@ -21,11 +21,15 @@ const Layout = ({ children }) => {
     <React.Fragment>
       <Helmet>
         <link
-          href="https://fonts.googleapis.com/css?family=Yatra+One&display=swap"
+          href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap"
           rel="stylesheet"
         />
       </Helmet>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={data.site.siteMetadata.title} fontFamily="headings" />
       <NavBar />
       <div>
         <main>{children}</main>

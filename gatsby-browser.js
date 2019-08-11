@@ -7,11 +7,13 @@
 import React from 'react';
 import theme from './src/common/theme';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import 'semantic-ui-css/semantic.min.css';
 
 const GlobalStyle = createGlobalStyle`
   body {
     font-family: ${props => props.theme.fontFamily};
   }
+
 `;
 
 export const wrapRootElement = ({ element }) => {
