@@ -71,7 +71,6 @@ export default {
       fontSize: 2,
       fontFamily: 'heading',
       fontWeight: 'bold',
-      p: 2,
       color: 'inherit',
       textDecoration: 'none',
       ':hover,:focus,.active': {
