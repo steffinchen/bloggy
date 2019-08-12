@@ -4,8 +4,6 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import colours from '../common/colours';
-
 const Header = ({ siteTitle }) => (
   <StyledHeader style={{}}>
     <Title>
@@ -15,7 +13,7 @@ const Header = ({ siteTitle }) => (
 );
 
 const StyledHeader = styled.header`
-  background: ${colours.color3};
+  background: ${props => props.theme.colors.primary};
   margin-bottom: 1.45rem;
   padding: 2em;
 `;
@@ -23,8 +21,8 @@ const StyledHeader = styled.header`
 const Title = styled.h1`
   font-family: 'Kaushan Script', cursive;
   font-size: 2em;
-  text-decoration: none;
   & a {
+    text-decoration: none;
     color: white;
   }
 `;

@@ -20,9 +20,7 @@ const NavBar = () => (
       About
     </Link>
     <Box mx="auto" />
-    <Link variant="nav" href="#!">
-      Search
-    </Link>
+    <input type="text" placeholder="Search" />
   </Container>
 );
 

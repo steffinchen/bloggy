@@ -11,7 +11,6 @@ import {
   ThemeProvider as SCThemeProvider,
 } from 'styled-components';
 import { ThemeProvider as EThemeProvider } from 'emotion-theming';
-import preset from '@rebass/preset';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -23,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
 export const wrapRootElement = ({ element }) => {
   return (
     <SCThemeProvider theme={theme}>
-      <EThemeProvider theme={preset}>
+      <EThemeProvider theme={theme}>
         <React.Fragment>
           {element}
           <GlobalStyle />

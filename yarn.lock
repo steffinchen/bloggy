@@ -1222,11 +1222,6 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@rebass/preset@^4.0.2":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@rebass/preset/-/preset-4.0.2.tgz#624a929fcac6509063ab8a60c0c944611326861d"
-  integrity sha512-xmkecnBLwhZSSFBeTC8G29cDjnDuAU6gpaLBf2d+7N8pscrHY/F1raEjj42F/SBuDA6g8a/XBnNOWSqUzRKlWw==
-
 "@sindresorhus/is@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
