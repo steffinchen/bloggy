@@ -6,24 +6,27 @@ import facebook from '../images/icons/facebook.svg';
 import etsy from '../images/icons/etsy.svg';
 import rss from '../images/icons/rss.svg';
 import Search from '../common/search';
+import Hide from '../common/hide';
 
 const NavBar = () => (
   <Container fontFamily="headings" px={2} alignItems="center">
-    <Link variant="nav" href="/">
-      Home
-    </Link>
-    <Link variant="nav" href="https://rebassjs.org">
-      Link
-    </Link>
-    <Link variant="nav" href="blog">
-      Blog
-    </Link>
-    <Link variant="nav" href="patterns">
-      Patterns
-    </Link>
-    <Link variant="nav" href="about">
-      About
-    </Link>
+    <Hide breakpoints={[1, 2]}>
+      <Link variant="nav" href="/">
+        Home
+      </Link>
+      <Link variant="nav" href="https://rebassjs.org">
+        Link
+      </Link>
+      <Link variant="nav" href="blog">
+        Blog
+      </Link>
+      <Link variant="nav" href="patterns">
+        Patterns
+      </Link>
+      <Link variant="nav" href="about">
+        About
+      </Link>
+    </Hide>
     <Box mx="auto" />
     <Search />
     <Icon src={instagram} />
