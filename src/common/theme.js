@@ -52,6 +52,10 @@ export default {
       textTransform: 'uppercase',
       letterSpacing: '0.1em',
     },
+    title: {
+      fontFamily: '"Kaushan Script", cursive',
+      textShadow: '1px 1px 2px gray',
+    },
   },
   variants: {
     avatar: {

@@ -1,15 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
+import BackgroundImage from 'gatsby-background-image';
 import styled from 'styled-components';
+import { Heading } from 'rebass';
 
 const query = graphql`
   query {
     file(relativePath: { eq: "images/header.jpg" }) {
       childImageSharp {
-        fixed(height: 125) {
-          ...GatsbyImageSharpFixed
+        fluid(quality: 90, maxWidth: 4160) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
@@ -19,24 +20,28 @@ const query = graphql`
 const Header = ({ siteTitle }) => {
   const data = useStaticQuery(query);
   return (
-    <StyledHeader style={{}}>
-      <Img fixed={data.file.childImageSharp.fixed} />
-      <Title>
-        <Link to="/">{siteTitle}</Link>
-      </Title>
+    <StyledHeader>
+      <StyledImage fluid={data.file.childImageSharp.fluid}>
+        <Link to="/">
+          <Heading fontSize={[5, 6, 7]} color="white" variant="title">
+            {siteTitle}
+          </Heading>
+        </Link>
+      </StyledImage>
     </StyledHeader>
   );
 };
 
-const StyledHeader = styled.header`
-  background: ${props => props.theme.colors.primary};
-  margin-bottom: 1.45rem;
-  padding: 2em;
+const StyledImage = styled(BackgroundImage)`
+  display: flex;
+  height: 160px;
+  justify-content: center;
+  align-items: center;
 `;
 
-const Title = styled.h1`
-  font-family: 'Kaushan Script', cursive;
-  font-size: 2em;
+const StyledHeader = styled.header`
+  background: ${props => props.theme.colors.primary};
+  margin: -8px -8px 8px -8px;
   & a {
     text-decoration: none;
     color: white;
