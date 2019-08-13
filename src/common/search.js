@@ -8,8 +8,8 @@ const Search = () => {
   return (
     <Container>
       <SearchBox type="text" placeholder="Search..." />
-      <StyledButton primary>
-        <FontAwesomeIcon icon={faSearch} />
+      <StyledButton primary py="5px" px="10px">
+        <FontAwesomeIcon icon={faSearch} size="xs" />
       </StyledButton>
     </Container>
   );
@@ -17,7 +17,6 @@ const Search = () => {
 
 const StyledButton = styled(Button)`
   border: 0;
-  padding: 0.5rem;
   border-radius: 0;
 `;
 
@@ -29,7 +28,8 @@ const Container = styled.div`
 
 const SearchBox = styled.input`
   border: 0;
-  padding: 0.5rem 0.5rem 0.5rem 0;
+  padding: 0;
+  width: 80px;
 `;
 
 export default Search;

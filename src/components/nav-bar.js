@@ -7,41 +7,61 @@ import etsy from '../images/icons/etsy.svg';
 import rss from '../images/icons/rss.svg';
 import Search from '../common/search';
 import Hide from '../common/hide';
+import MobileNav from './mobile-nav';
 
 const NavBar = () => (
   <Container fontFamily="headings" px={2} alignItems="center">
     <Hide breakpoints={[1, 2]}>
-      <Link variant="nav" href="/">
-        Home
-      </Link>
-      <Link variant="nav" href="https://rebassjs.org">
-        Link
-      </Link>
-      <Link variant="nav" href="blog">
-        Blog
-      </Link>
-      <Link variant="nav" href="patterns">
-        Patterns
-      </Link>
-      <Link variant="nav" href="about">
-        About
-      </Link>
+      <MobileNav />
     </Hide>
-    <Box mx="auto" />
-    <Search />
-    <Icon src={instagram} />
-    <Icon src={facebook} />
-    <Icon src={etsy} />
-    <Icon src={rss} />
+    <Hide breakpoints={[0]} style={{ width: '100%' }}>
+      <DesktopNav alignItems="center">
+        <Link variant="nav" href="/">
+          Home
+        </Link>
+        <Link variant="nav" href="https://rebassjs.org">
+          Link
+        </Link>
+        <Link variant="nav" href="blog">
+          Blog
+        </Link>
+        <Link variant="nav" href="patterns">
+          Patterns
+        </Link>
+        <Link variant="nav" href="about">
+          About
+        </Link>
+        <Box mx="auto" />
+        <Search />
+      </DesktopNav>
+    </Hide>
+    <Box mx="auto" breakpoints={[1, 2]} />
+    <Link href="http://www.instagram.com">
+      <Icon src={instagram} />
+    </Link>
+    <Link href="http://www.facebook.com">
+      <Icon src={facebook} />
+    </Link>
+    <Link href="http://www.etsy.com">
+      <Icon src={etsy} />
+    </Link>
+    <Link href="http://">
+      <Icon src={rss} />
+    </Link>
   </Container>
 );
 
 const Icon = styled.img`
   height: 25px;
+  padding-left: 20px;
+  cursor: pointer;
 `;
 
 const Container = styled(Flex)`
   padding-bottom: 20px;
+`;
+
+const DesktopNav = styled(Flex)`
   * + * {
     padding-left: 20px;
   }
