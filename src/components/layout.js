@@ -6,6 +6,7 @@ import { Flex, Box } from 'rebass';
 
 import Header from './header';
 import NavBar from './nav-bar';
+import Footer from './footer';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -48,11 +49,7 @@ const Layout = ({ children }) => {
           </Box>
           {children}
         </Flex>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <Footer />
       </div>
     </React.Fragment>
   );

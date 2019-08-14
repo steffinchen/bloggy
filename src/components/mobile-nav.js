@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Flex, Link, Box } from 'rebass';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 const MobileNav = () => {
   const [open, setOpen] = useState(false);
