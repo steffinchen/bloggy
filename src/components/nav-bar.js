@@ -10,7 +10,7 @@ import Hide from '../common/hide';
 import MobileNav from './mobile-nav';
 
 const NavBar = () => (
-  <Container fontFamily="headings" px={2} alignItems="center">
+  <Container fontFamily="headings" px={2}>
     <Hide breakpoints={[2]}>
       <MobileNav />
     </Hide>

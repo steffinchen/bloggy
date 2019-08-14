@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
-import { Flex } from 'rebass';
+import { Flex, Box } from 'rebass';
 
 import Header from './header';
 import NavBar from './nav-bar';
@@ -43,7 +43,9 @@ const Layout = ({ children }) => {
             0.7, // 25% width for all larger breakpoints
           ]}
         >
-          <NavBar alignSelf="stretch" />
+          <Box alignSelf="stretch">
+            <NavBar />
+          </Box>
           {children}
         </Flex>
         <footer>
