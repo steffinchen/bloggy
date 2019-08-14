@@ -11,10 +11,10 @@ import MobileNav from './mobile-nav';
 
 const NavBar = () => (
   <Container fontFamily="headings" px={2} alignItems="center">
-    <Hide breakpoints={[1, 2]}>
+    <Hide breakpoints={[2]}>
       <MobileNav />
     </Hide>
-    <Hide breakpoints={[0]} style={{ width: '100%' }}>
+    <Hide breakpoints={[0, 1]} style={{ width: '100%' }}>
       <DesktopNav alignItems="center">
         <Link variant="nav" href="/">
           Home
@@ -35,7 +35,7 @@ const NavBar = () => (
         <Search />
       </DesktopNav>
     </Hide>
-    <Box mx="auto" breakpoints={[1, 2]} />
+    <Box mx="auto" breakpoints={[2]} />
     <Link href="http://www.instagram.com">
       <Icon src={instagram} />
     </Link>

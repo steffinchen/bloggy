@@ -32,20 +32,19 @@ const Layout = ({ children }) => {
       </Helmet>
       <Header siteTitle={data.site.siteMetadata.title} fontFamily="headings" />
       <div>
-        <Flex justifyContent="center" width={[1]}>
-          <Flex
-            flexDirection="column"
-            alignItems="center"
-            width={[
-              1, // 100% width on small screens
-              0.8, // 50% width from the next breakpoint and up
-              0.7, // 33% width from the next breakpoint and up
-              0.7, // 25% width for all larger breakpoints
-            ]}
-          >
-            <NavBar />
-            {children}
-          </Flex>
+        <Flex
+          alignItems="center"
+          flexDirection="column"
+          m="auto"
+          width={[
+            1, // 100% width on small screens
+            0.8, // 50% width from the next breakpoint and up
+            0.7, // 33% width from the next breakpoint and up
+            0.7, // 25% width for all larger breakpoints
+          ]}
+        >
+          <NavBar alignSelf="stretch" />
+          {children}
         </Flex>
         <footer>
           © {new Date().getFullYear()}, Built with
