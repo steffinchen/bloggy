@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
+import { Flex } from 'rebass';
 
 import Header from './header';
 import NavBar from './nav-bar';
@@ -30,9 +31,22 @@ const Layout = ({ children }) => {
         />
       </Helmet>
       <Header siteTitle={data.site.siteMetadata.title} fontFamily="headings" />
-      <NavBar />
       <div>
-        <main>{children}</main>
+        <Flex justifyContent="center" width={[1]}>
+          <Flex
+            flexDirection="column"
+            alignItems="center"
+            width={[
+              1, // 100% width on small screens
+              0.8, // 50% width from the next breakpoint and up
+              0.7, // 33% width from the next breakpoint and up
+              0.7, // 25% width for all larger breakpoints
+            ]}
+          >
+            <NavBar />
+            {children}
+          </Flex>
+        </Flex>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}

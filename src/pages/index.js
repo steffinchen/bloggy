@@ -38,18 +38,16 @@ const IndexPage = props => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <PostPreview
-            key={node.id}
-            slug={node.fields.slug}
-            title={node.frontmatter.title}
-            date={node.frontmatter.date}
-            excerpt={node.excerpt}
-            image={node.frontmatter.image}
-          />
-        ))}
-      </div>
+      {data.allMarkdownRemark.edges.map(({ node }) => (
+        <PostPreview
+          key={node.id}
+          slug={node.fields.slug}
+          title={node.frontmatter.title}
+          date={node.frontmatter.date}
+          excerpt={node.excerpt}
+          image={node.frontmatter.image}
+        />
+      ))}
     </Layout>
   );
 };

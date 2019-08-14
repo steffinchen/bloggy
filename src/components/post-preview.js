@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import { Card, Heading, Text } from 'rebass';
+import { Card, Heading, Text, Box } from 'rebass';
 import Img from 'gatsby-image';
 
 const PostPreview = ({ slug, title, date, excerpt, image }) => {
   return (
     <Card
       sx={{
-        p: 10,
+        p: 0,
+        pb: 10,
         borderRadius: 5,
         boxShadow: '0 0 16px rgba(0, 0, 0, .25)',
       }}
@@ -20,18 +21,26 @@ const PostPreview = ({ slug, title, date, excerpt, image }) => {
       ]}
     >
       <StyledLink to={slug}>
-        <Img fluid={image.childImageSharp.fluid} />
-        <Heading as="h3" fontFamily="heading" fontSize="3">
-          {title}
-        </Heading>
-        <Text fontSize={0}>
-          <div>{date}</div>
-          <p>{excerpt}</p>
-        </Text>
+        <StyledImg fluid={image.childImageSharp.fluid} />
+        <Box p="25px 25px 0;">
+          <Heading as="h3" fontSize="1" color="grey">
+            Getting started
+          </Heading>
+          <Heading as="h3" fontFamily="heading" fontSize="3">
+            {title}
+          </Heading>
+          <Text fontSize={0}>
+            <p>{excerpt}</p>
+          </Text>
+        </Box>
       </StyledLink>
     </Card>
   );
 };
+
+const StyledImg = styled(Img)`
+  border-radius: 5px 5px 0 0;
+`;
 
 const StyledLink = styled(Link)`
   text-decoration: none;
