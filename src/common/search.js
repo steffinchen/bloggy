@@ -11,7 +11,7 @@ const Search = () => {
       {showInput && <SearchBox type="text" placeholder="Search..." />}
       <FontAwesomeIcon
         icon={faSearch}
-        size="s"
+        size="sm"
         onClick={() => setShowInput(!showInput)}
       />
     </Container>

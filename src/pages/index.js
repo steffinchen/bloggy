@@ -36,6 +36,8 @@ export const query = graphql`
 const IndexPage = props => {
   const data = props.data;
 
+  console.log(data.allMarkdownRemark.edges[0].node.frontmatter.image);
+
   return (
     <Layout>
       <SEO title="Home" />
