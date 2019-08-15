@@ -1,71 +1,92 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
   siteMetadata: {
-    title: 'SkillfullyTangled',
-    description: 'A blog about knitting and other yarn-related things',
-    siteUrl: 'https://skillfully-tangled.com', // full path to blog - no ending slash
+    title: "SkillfullyTangled",
+    description: "A blog about knitting and other yarn-related things",
+    siteUrl: "https://skillfully-tangled.com" // full path to blog - no ending slash
   },
   mapping: {
-    'MarkdownRemark.frontmatter.author': 'AuthorYaml',
+    "MarkdownRemark.frontmatter.author": "AuthorYaml"
   },
   plugins: [
-    'gatsby-plugin-sitemap',
-    'gatsby-plugin-sharp',
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-sharp",
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'content',
-        path: path.join(__dirname, 'src', 'content'),
-      },
+        name: "content",
+        path: path.join(__dirname, "src", "content")
+      }
     },
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-responsive-iframe',
+            resolve: "gatsby-remark-responsive-iframe",
             options: {
-              wrapperStyle: 'margin-bottom: 1rem',
-            },
+              wrapperStyle: "margin-bottom: 1rem"
+            }
           },
-          'gatsby-remark-prismjs',
-          'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants',
-          'gatsby-remark-abbr',
+          "gatsby-remark-prismjs",
+          "gatsby-remark-copy-linked-files",
+          "gatsby-remark-smartypants",
+          "gatsby-remark-abbr",
           {
-            resolve: 'gatsby-remark-images',
+            resolve: "gatsby-remark-images",
             options: {
               maxWidth: 1170,
-              quality: 90,
-            },
-          },
-        ],
-      },
+              quality: 90
+            }
+          }
+        ]
+      }
     },
-    'gatsby-transformer-json',
+    "gatsby-transformer-json",
     {
-      resolve: 'gatsby-plugin-canonical-urls',
+      resolve: "gatsby-plugin-canonical-urls",
       options: {
-        siteUrl: 'https://skillfullytangled.com',
-      },
+        siteUrl: "https://skillfullytangled.com"
+      }
     },
-    'gatsby-plugin-emotion',
-    'gatsby-plugin-typescript',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-react-helmet',
-    'gatsby-transformer-yaml',
-    'gatsby-plugin-feed',
+    "gatsby-plugin-emotion",
+    "gatsby-plugin-typescript",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-react-helmet",
+    "gatsby-transformer-yaml",
+    "gatsby-plugin-feed",
     {
-      resolve: 'gatsby-plugin-postcss',
+      resolve: "gatsby-plugin-postcss",
       options: {
-        postCssPlugins: [require('postcss-color-function'), require('cssnano')()],
-      },
+        postCssPlugins: [
+          require("postcss-color-function"),
+          require("cssnano")()
+        ]
+      }
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 590
+            }
+          }
+        ]
+      }
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: 'UA-145850998-1',
+        trackingId: "UA-145850998-1",
         // Puts tracking script in the head instead of the body
         head: true,
         // IP anonymization for GDPR compliance
@@ -73,12 +94,12 @@ module.exports = {
         // Disable analytics for users with `Do Not Track` enabled
         respectDNT: true,
         // Avoids sending pageview hits from custom paths
-        exclude: ['/preview/**'],
+        exclude: ["/preview/**"],
         // Specifies what percentage of users should be tracked
         sampleRate: 100,
         // Determines how often site speed tracking beacons will be sent
-        siteSpeedSampleRate: 10,
-      },
-    },
-  ],
+        siteSpeedSampleRate: 10
+      }
+    }
+  ]
 };
