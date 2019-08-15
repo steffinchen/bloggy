@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Footer = () => {
   return (
     <Box
-      backgroundColor="lightgrey"
+      backgroundColor="#ECECEC"
       pt="20px"
       px="20px"
       pb="60px"
@@ -32,6 +32,9 @@ const Footer = () => {
 
 const StyledLink = styled(Link)`
   margin-left: 20px !important;
+  color: black !important;
+  text-decoration: none;
+  font-family: ${props => props.theme.fonts.heading};
 `;
 
 export default Footer;

@@ -15,6 +15,7 @@ import { ThemeProvider as EThemeProvider } from 'emotion-theming';
 const GlobalStyle = createGlobalStyle`
   body {
     font-family: ${props => props.theme.fontFamily};
+    margin-bottom: 0px;
   }
 
 `;
