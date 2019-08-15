@@ -17,6 +17,7 @@ const PostPreview = ({ slug, title, date, excerpt, image }) => {
         },
         transform: ' translate3D(0,-1px,0) translate(0px, 0)',
         transition: 'all 0.4s ease',
+        margin: '0 5px',
       }}
       width={[
         1, // 100% width on small screens
