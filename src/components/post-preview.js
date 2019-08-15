@@ -12,6 +12,11 @@ const PostPreview = ({ slug, title, date, excerpt, image }) => {
         pb: 10,
         borderRadius: 5,
         boxShadow: '0 0 16px rgba(0, 0, 0, .25)',
+        ':hover': {
+          transform: 'scale(1.02)',
+        },
+        transform: ' translate3D(0,-1px,0) translate(0px, 0)',
+        transition: 'all 0.4s ease',
       }}
       width={[
         1, // 100% width on small screens
