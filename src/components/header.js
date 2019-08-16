@@ -40,7 +40,6 @@ const StyledImage = styled(BackgroundImage)`
 `;
 
 const StyledHeader = styled.header`
-  background: ${props => props.theme.colors.primary};
   margin: -8px -8px 8px -8px;
   & a {
     text-decoration: none;

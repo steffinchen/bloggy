@@ -37,12 +37,14 @@ const Layout = ({ children }) => {
           alignItems="center"
           flexDirection="column"
           m="auto"
+          my="20px"
           width={[
             1, // 100% width on small screens
             0.8, // 50% width from the next breakpoint and up
             0.7, // 33% width from the next breakpoint and up
             0.7, // 25% width for all larger breakpoints
           ]}
+          sx={{ boxShadow: '0 0 16px rgba(0, 0, 0, .25)' }}
         >
           <Box alignSelf="stretch">
             <NavBar />

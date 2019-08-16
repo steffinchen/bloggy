@@ -18,7 +18,12 @@ const Footer = () => {
         <Flex justifyContent="space-between">
           <div>© {new Date().getFullYear()} SkillfullyTangled</div>
           <div>
-            <StyledLink href="http://instagram.com">Instagram</StyledLink>
+            <StyledLink
+              href="http://instagram.com"
+              sx={{ fontFamily: 'heading' }}
+            >
+              Instagram
+            </StyledLink>
             <StyledLink href="http://facebook.com">Facebook</StyledLink>
             <StyledLink href="http://wwww.skillfullytangled.com">
               SkillfullyTangled
@@ -34,7 +39,6 @@ const StyledLink = styled(Link)`
   margin-left: 20px !important;
   color: black !important;
   text-decoration: none;
-  font-family: ${props => props.theme.fonts.heading};
 `;
 
 export default Footer;

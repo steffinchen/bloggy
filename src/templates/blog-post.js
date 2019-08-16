@@ -10,11 +10,10 @@ export default ({ data }) => {
     frontmatter: { title, image },
   } = data.markdownRemark;
   let featuredImgFluid = image.childImageSharp.fluid;
-  console.log('TCL: featuredImgFluid', featuredImgFluid);
   return (
     <Layout>
       <h1>{title}</h1>
-      <Box width="200px">
+      <Box width="100%" mx="-30px">
         <Img fluid={featuredImgFluid} />
       </Box>
       <div dangerouslySetInnerHTML={{ __html: html }}></div>
