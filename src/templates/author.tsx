@@ -190,7 +190,7 @@ const Author: React.FC<AuthorTemplateProps> = props => {
                   <a
                     className="social-link-tw"
                     css={SocialLink}
-                    href={`https://twitter.com/${author.instagram}`}
+                    href={`https://instagram.com/${author.instagram}`}
                     title="Instagram"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -252,7 +252,7 @@ export const pageQuery = graphql`
     authorYaml(id: { eq: $author }) {
       id
       website
-      twitter
+      instagram
       bio
       facebook
       location

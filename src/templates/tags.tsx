@@ -52,7 +52,7 @@ interface TagTemplateProps {
 }
 
 const Tags: React.FC<TagTemplateProps> = props => {
-  const tag = (props.pageContext.tag) ? props.pageContext.tag : '';
+  const tag = props.pageContext.tag ? props.pageContext.tag : '';
   const { edges, totalCount } = props.data.allMarkdownRemark;
   const tagData = props.data.allTagYaml.edges.find(
     n => n.node.id.toLowerCase() === tag.toLowerCase(),
@@ -77,12 +77,6 @@ const Tags: React.FC<TagTemplateProps> = props => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${tag} - ${config.title}`} />
         <meta name="twitter:url" content={config.siteUrl + props.pathContext.slug} />
-        {config.twitter && (
-          <meta
-            name="twitter:site"
-            content={`@${config.twitter.split('https://twitter.com/')[1]}`}
-          />
-        )}
       </Helmet>
       <Wrapper>
         <header
@@ -90,9 +84,9 @@ const Tags: React.FC<TagTemplateProps> = props => {
           css={[outer, SiteHeader]}
           style={{
             backgroundImage:
-              tagData && tagData.node.image ?
-                `url('${tagData.node.image.childImageSharp.fluid.src}')` :
-                '',
+              tagData && tagData.node.image
+                ? `url('${tagData.node.image.childImageSharp.fluid.src}')`
+                : '',
           }}
         >
           <div css={inner}>
