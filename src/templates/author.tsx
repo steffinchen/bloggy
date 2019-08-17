@@ -25,7 +25,7 @@ import Facebook from '../components/icons/facebook';
 import Helmet from 'react-helmet';
 import config from '../website-config';
 import Website from '../components/icons/website';
-import Twitter from '../components/icons/twitter';
+import InstagramIcon from '../components/icons/instagram';
 
 const HiddenMobile = css`
   @media (max-width: 500px) {
@@ -93,7 +93,7 @@ interface AuthorTemplateProps {
     authorYaml: {
       id: string;
       website?: string;
-      twitter?: string;
+      instagram?: string;
       facebook?: string;
       location?: string;
       // eslint-disable-next-line @typescript-eslint/camelcase
@@ -115,13 +115,10 @@ interface AuthorTemplateProps {
 const Author: React.FC<AuthorTemplateProps> = props => {
   const author = props.data.authorYaml;
 
-  const edges = props.data.allMarkdownRemark.edges.filter(
-    edge => {
-      const isDraft = (edge.node.frontmatter.draft !== true ||
-        process.env.NODE_ENV === 'development');
-      return isDraft && edge.node.frontmatter.author && edge.node.frontmatter.author.id === author.id;
-    }
-  );
+  const edges = props.data.allMarkdownRemark.edges.filter(edge => {
+    const isDraft = edge.node.frontmatter.draft !== true || process.env.NODE_ENV === 'development';
+    return isDraft && edge.node.frontmatter.author && edge.node.frontmatter.author.id === author.id;
+  });
   const totalCount = edges.length;
 
   return (
@@ -136,22 +133,11 @@ const Author: React.FC<AuthorTemplateProps> = props => {
         <meta property="og:type" content="profile" />
         <meta property="og:title" content={`${author.id} - ${config.title}`} />
         <meta property="og:url" content={config.siteUrl + props.pathContext.slug} />
-        <meta property="article:publisher" content="https://www.facebook.com/ghost" />
-        <meta property="article:author" content="https://www.facebook.com/ghost" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content={`${author.id} - ${config.title}`} />
-        <meta name="twitter:url" content={config.siteUrl + props.pathContext.slug} />
-        {config.twitter && (
-          <meta
-            name="twitter:site"
-            content={`@${config.twitter.split('https://twitter.com/')[1]}`}
-          />
-        )}
-        {config.twitter && (
-          <meta
-            name="twitter:creator"
-            content={`@${config.twitter.split('https://twitter.com/')[1]}`}
-          />
+        <meta
+          property="article:publisher"
+          content={`https://www.facebook.com/${author.facebook}`}
+        />
+        <meta property="article:author" content={`https://www.facebook.com/${author.facebook}`} />
         )}
       </Helmet>
       <Wrapper>
@@ -160,9 +146,9 @@ const Author: React.FC<AuthorTemplateProps> = props => {
           css={[outer, SiteHeader]}
           style={{
             // eslint-disable-next-line @typescript-eslint/camelcase
-            backgroundImage: author.profile_image ?
-              `url(${author.profile_image.childImageSharp.fluid.src})` :
-              '',
+            backgroundImage: author.profile_image
+              ? `url(${author.profile_image.childImageSharp.fluid.src})`
+              : '',
           }}
         >
           <div css={inner}>
@@ -200,16 +186,16 @@ const Author: React.FC<AuthorTemplateProps> = props => {
                     </a>
                   </div>
                 )}
-                {author.twitter && (
+                {author.instagram && (
                   <a
                     className="social-link-tw"
                     css={SocialLink}
-                    href={`https://twitter.com/${author.twitter}`}
-                    title="Twitter"
+                    href={`https://twitter.com/${author.instagram}`}
+                    title="Instagram"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Twitter />
+                    <InstagramIcon />
                   </a>
                 )}
                 {author.facebook && (
@@ -286,9 +272,9 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: { frontmatter: { draft: { ne: true } } },
-      sort: { fields: [frontmatter___date], order: DESC },
-      limit: 2000,
+      filter: { frontmatter: { draft: { ne: true } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 2000
     ) {
       edges {
         node {

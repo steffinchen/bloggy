@@ -7,7 +7,7 @@ import { css } from '@emotion/core';
 import { SocialLink } from '../../styles/shared';
 import config from '../../website-config';
 import Facebook from '../icons/facebook';
-import Twitter from '../icons/twitter';
+import Instagram from '../icons/instagram';
 import SubscribeModal from '../subscribe/SubscribeOverlay';
 import SiteNavLogo from './SiteNavLogo';
 
@@ -157,15 +157,15 @@ class SiteNav extends React.Component<SiteNavProps> {
                 <Facebook />
               </a>
             )}
-            {config.twitter && (
+            {config.instagram && (
               <a
                 css={SocialLink}
-                href={config.twitter}
-                title="Twitter"
+                href={config.instagram}
+                title="Instagram"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Twitter />
+                <Instagram />
               </a>
             )}
           </SocialLinks>
