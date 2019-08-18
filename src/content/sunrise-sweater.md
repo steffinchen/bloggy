@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Github Source
-image: img/callum-shaw-555357-unsplash.jpg
+title: Sunrise Sweater
+image: img/sunrise_sweater_yoke.jpg
 author: Steffi
-date: 2019-03-10T10:00:00.000Z
+date: 2019-08-10T10:00:00.000Z
 tags:
-  - Source
+  - Inspiration
+  - Knitting
 ---
 
 You'll find the source of this blog on GitHub.  

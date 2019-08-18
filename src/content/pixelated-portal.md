@@ -1,9 +1,9 @@
 ---
-title: 'Gettysburg Address'
+title: 'Pixelated Portal'
 author: Steffi
-tags: []
-image: img/demo1.jpg
-date: '1863-11-19T10:00:00.000Z'
+tags: ['Inspiration', 'Knitting']
+image: img/pixelated_portal.jpg
+date: '2019-08-12T10:00:00.000Z'
 draft: false
 ---
 

@@ -1,9 +1,9 @@
 ---
-title: 'Great Gatsby'
+title: 'Fluffy Socks'
 author: Steffi
-tags: []
-image: img/marvin-meyer-794521-unsplash.jpg
-date: '1922-12-12T10:00:00.000Z'
+tags: ['Pattern', 'Knitting']
+image: img/rosie-kerr-IIMvRgVOjRo-unsplash.jpg
+date: '2019-08-20T10:00:00.000Z'
 draft: false
 ---
 
