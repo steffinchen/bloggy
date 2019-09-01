@@ -85,23 +85,23 @@ export const PostFullTitle = styled.h1`
 
 const PostFullImage = styled.figure`
   margin: 0 -10vw -165px;
-  height: 800px;
+  height: 400px;
   background: ${colors.lightgrey} center center;
   background-size: cover;
   border-radius: 5px;
 
   @media (max-width: 1170px) {
     margin: 0 -4vw -100px;
-    height: 600px;
+    height: 300px;
     border-radius: 0;
   }
 
   @media (max-width: 800px) {
-    height: 400px;
+    height: 300px;
   }
   @media (max-width: 500px) {
     margin-bottom: 4vw;
-    height: 350px;
+    height: 300px;
   }
 `;
 

@@ -1,4 +1,12 @@
 {
     "eslint.packageManager": "yarn",
-    "turboConsoleLog.addSemicolonInTheEnd": true
+    "turboConsoleLog.addSemicolonInTheEnd": true,
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ]
 }
