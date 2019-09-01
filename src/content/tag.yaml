@@ -1,3 +1,9 @@
-- id: speeches
-  description: Some of the greatest words ever spoken.
-  image: img/speeches-cover.jpg
+- id: inspiration
+  description: ''
+  image: img/simon-matzinger-twukN12EN7c-unsplash.jpg
+- id: knitting
+  description: ''
+  image: img/les-triconautes-eGLoxqsImCg-unsplash.jpg
+- id: pattern
+  description: 'asdf'
+  image: img/rocknwool-x3N59fMm0ME-unsplash.jpg
