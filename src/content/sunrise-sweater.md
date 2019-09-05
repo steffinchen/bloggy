@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sunrise Sweater
-image: img/sunrise-sweater/sunrise_sweater_yoke.jpg
+image: img/simon-matzinger-twukN12EN7c-unsplash.jpg
 author: Steffi
 date: 2019-08-10T10:00:00.000Z
 tags:
@@ -28,6 +28,8 @@ I decided on Icefall because I liked how the contrast color on the dark backgrou
 After comparing lots of yarn online, I went with Malabrigo Rios in superwash Merino DK. It's very high-quality wool that is not scratchy at all, and they have an amazingly big range of colors. And most yarns are tonal, meaning one skein includes many shades of the same color.
 
 I chose Winter Road as main color, and Whales Road, Cereza and Sunset as contrast colors.
+
+![Close-up of the yoke](./img/sunrise-sweater/sunrise_sweater_yoke.jpg)
 
 ## Some things are not adding up
 
