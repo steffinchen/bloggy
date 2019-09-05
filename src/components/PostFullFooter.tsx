@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 
 const PostFullFoot = styled.footer`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
   padding: 3vw 0 6vw 0;

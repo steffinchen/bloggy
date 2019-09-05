@@ -83,7 +83,7 @@ const PostCardExcerpt = styled.section`
 
 const PostCardMeta = styled.footer`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-end;
   padding: 0 25px 25px;
 `;
@@ -228,7 +228,7 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
           </PostCardExcerpt>
         </Link>
         <PostCardMeta className="post-card-meta">
-          <AuthorList>
+          {/*<AuthorList>
             <AuthorListItem>
               <AuthorNameTooltip className="author-name-tooltip">
                 {post.frontmatter.author.id}
@@ -240,7 +240,7 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
                 />
               </Link>
             </AuthorListItem>
-          </AuthorList>
+          </AuthorList>*/}
           <ReadingTime>{post.timeToRead} min read</ReadingTime>
         </PostCardMeta>
       </PostCardContent>
