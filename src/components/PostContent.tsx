@@ -132,6 +132,12 @@ export const PostFullContent = styled.section`
     text-align: center;
   }
 
+  .gatsby-resp-image-wrapper + em {
+    text-align: center;
+    display: block;
+    padding-top: 30px;
+  }
+
   /* Override third party iframe styles */
   iframe {
     margin: 0 auto !important;
