@@ -7,13 +7,10 @@ import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import { Helmet } from 'react-helmet';
 
-import AuthorCard from '../components/AuthorCard';
 import Footer from '../components/Footer';
 import SiteNav from '../components/header/SiteNav';
 import PostCard from '../components/PostCard';
 import PostContent from '../components/PostContent';
-import PostFullFooter from '../components/PostFullFooter';
-import PostFullFooterRight from '../components/PostFullFooterRight';
 import ReadNextCard from '../components/ReadNextCard';
 import Subscribe from '../components/subscribe/Subscribe';
 import Wrapper from '../components/Wrapper';
@@ -21,6 +18,7 @@ import IndexLayout from '../layouts';
 import { colors } from '../styles/colors';
 import { inner, outer, SiteHeader, SiteMain } from '../styles/shared';
 import config from '../website-config';
+import SocialLinks from '../components/header/SocialLinks';
 
 const PostTemplate = css`
   .site-main {
@@ -47,7 +45,7 @@ export const NoImage = css`
 
 export const PostFullHeader = styled.header`
   margin: 0 auto;
-  padding: 6vw 3vw 3vw;
+  padding: 0 3vw 3vw;
   max-width: 1040px;
   text-align: center;
 
@@ -260,9 +258,15 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
         {height && <meta property="og:image:height" content={height} />}
       </Helmet>
       <Wrapper css={PostTemplate}>
-        <header css={[outer, SiteHeader]}>
+        <header
+          css={[outer, SiteHeader]}
+          style={{
+            background: `linear-gradient(${colors.iceberg}, #fff 80%)`,
+          }}
+        >
           <div css={inner}>
             <SiteNav />
+            <SocialLinks />
           </div>
         </header>
         <main id="site-main" className="site-main" css={[SiteMain, outer]}>

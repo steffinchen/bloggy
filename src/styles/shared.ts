@@ -5,7 +5,6 @@ import { lighten } from 'polished';
 
 export const outer = css`
   position: relative;
-  padding: 0 4vw;
 `;
 
 // Centered content container blocks
@@ -24,20 +23,20 @@ export const SiteTitle = styled.h1`
   z-index: 10;
   margin: 0;
   padding: 0;
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 700;
-  text-shadow: 2px 2px 2px #878787;
+  color: ${colors.grey};
 `;
 
 export const SiteDescription = styled.h2`
   z-index: 10;
   margin: 0;
   padding: 5px 0;
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   font-weight: 300;
   letter-spacing: 0.5px;
   opacity: 0.8;
-  text-shadow: 2px 2px 2px #878787;
+  color: ${colors.grey};
 `;
 
 export const PostFeed = css`
@@ -51,6 +50,7 @@ export const PostFeed = css`
 export const PostFeedRaise = css`
   @media (min-width: 900px) {
     padding-top: 0;
+    margin-top: -70px;
   }
 `;
 

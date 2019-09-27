@@ -20,6 +20,8 @@ import {
 import { PageContext } from './post';
 import Helmet from 'react-helmet';
 import config from '../website-config';
+import { colors } from '../styles/colors';
+import SocialLinks from '../components/header/SocialLinks';
 
 interface TagTemplateProps {
   pathContext: {
@@ -83,14 +85,17 @@ const Tags: React.FC<TagTemplateProps> = props => {
           className={`${tagData && tagData.node.image ? '' : 'no-cover'}`}
           css={[outer, SiteHeader]}
           style={{
-            backgroundImage:
-              tagData && tagData.node.image
-                ? `url('${tagData.node.image.childImageSharp.fluid.src}')`
-                : '',
+            background: `linear-gradient(${colors.iceberg}, #fff 30%)`,
           }}
         >
-          <div css={inner}>
+          <div
+            css={inner}
+            style={{
+              paddingBottom: '75px',
+            }}
+          >
             <SiteNav isHome={false} />
+            <SocialLinks />
             <SiteHeaderContent>
               <SiteTitle>{tag}</SiteTitle>
               <SiteDescription>
@@ -131,13 +136,6 @@ export const pageQuery = graphql`
         node {
           id
           description
-          image {
-            childImageSharp {
-              fluid(maxWidth: 3720) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
         }
       }
     }

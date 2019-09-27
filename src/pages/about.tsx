@@ -1,14 +1,16 @@
+import * as React from 'react';
+import { css } from '@emotion/core';
+import Helmet from 'react-helmet';
+
 import IndexLayout from '../layouts';
 import Wrapper from '../components/Wrapper';
 import SiteNav from '../components/header/SiteNav';
 import { SiteHeader, outer, inner, SiteMain } from '../styles/shared';
-import * as React from 'react';
-import { css } from '@emotion/core';
-
 import { PostFullHeader, PostFullTitle, NoImage, PostFull } from '../templates/post';
 import { PostFullContent } from '../components/PostContent';
 import Footer from '../components/Footer';
-import Helmet from 'react-helmet';
+import SocialLinks from '../components/header/SocialLinks';
+import { colors } from '../styles/colors';
 
 const PageTemplate = css`
   .site-main {
@@ -23,9 +25,15 @@ const About: React.FC = () => (
       <title>About</title>
     </Helmet>
     <Wrapper css={PageTemplate}>
-      <header css={[outer, SiteHeader]}>
+      <header
+        css={[outer, SiteHeader]}
+        style={{
+          background: `linear-gradient(${colors.iceberg}, #fff 80%)`,
+        }}
+      >
         <div css={inner}>
           <SiteNav />
+          <SocialLinks />
         </div>
       </header>
       <main id="site-main" className="site-main" css={[SiteMain, outer]}>

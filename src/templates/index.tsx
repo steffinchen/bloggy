@@ -114,7 +114,12 @@ const IndexPage: React.FC<IndexProps> = props => {
             background: `linear-gradient(${colors.iceberg}, #fff 60%)`,
           }}
         >
-          <div css={inner}>
+          <div
+            css={inner}
+            style={{
+              paddingBottom: '75px',
+            }}
+          >
             <SiteNav isHome />
             <SiteHeaderContent>
               <SiteTitle>

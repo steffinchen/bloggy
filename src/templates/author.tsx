@@ -26,6 +26,9 @@ import Helmet from 'react-helmet';
 import config from '../website-config';
 import Website from '../components/icons/website';
 import InstagramIcon from '../components/icons/instagram';
+import Email from '../components/icons/email';
+import { colors } from '../styles/colors';
+import SocialLinks from '../components/header/SocialLinks';
 
 const HiddenMobile = css`
   @media (max-width: 500px) {
@@ -42,6 +45,7 @@ const AuthorMeta = styled.div`
   margin: 0 0 10px 0;
   font-family: Georgia, serif;
   font-style: italic;
+  color: ${colors.grey};
 `;
 
 const AuthorBio = styled.h2`
@@ -93,6 +97,7 @@ interface AuthorTemplateProps {
     authorYaml: {
       id: string;
       website?: string;
+      email?: string;
       instagram?: string;
       facebook?: string;
       location?: string;
@@ -145,14 +150,13 @@ const Author: React.FC<AuthorTemplateProps> = props => {
           className="no-cover"
           css={[outer, SiteHeader]}
           style={{
-            // eslint-disable-next-line @typescript-eslint/camelcase
-            backgroundImage: author.profile_image
-              ? `url(${author.profile_image.childImageSharp.fluid.src})`
-              : '',
+            background: `linear-gradient(${colors.iceberg}, #fff 30%)`,
+            paddingBottom: '75px',
           }}
         >
           <div css={inner}>
             <SiteNav isHome={false} />
+            <SocialLinks />x
             <SiteHeaderContent>
               <img
                 css={[AuthorProfileImage, AuthorProfileBioImage]}
@@ -170,7 +174,7 @@ const Author: React.FC<AuthorTemplateProps> = props => {
                 <div css={HiddenMobile}>
                   {totalCount > 1 && `${totalCount} posts`}
                   {totalCount === 1 && '1 post'}
-                  {totalCount === 0 && 'No posts'} <Bull>•</Bull>
+                  {totalCount === 0 && 'No posts'} <Bull>&bull;</Bull>
                 </div>
                 {author.website && (
                   <div>
@@ -208,6 +212,17 @@ const Author: React.FC<AuthorTemplateProps> = props => {
                     rel="noopener noreferrer"
                   >
                     <Facebook />
+                  </a>
+                )}
+                {author.email && (
+                  <a
+                    css={SocialLink}
+                    href={`mailto:${author.facebook}`}
+                    title="Mail"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Email />
                   </a>
                 )}
                 {/* TODO: RSS for author */}
@@ -252,6 +267,7 @@ export const pageQuery = graphql`
     authorYaml(id: { eq: $author }) {
       id
       website
+      email
       bio
       instagram
       facebook
