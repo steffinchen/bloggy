@@ -11,6 +11,7 @@ import Wrapper from '../components/Wrapper';
 import IndexLayout from '../layouts';
 import config from '../website-config';
 import Pagination from '../components/Pagination';
+import { colors } from '../styles/colors';
 
 import {
   inner,
@@ -110,7 +111,7 @@ const IndexPage: React.FC<IndexProps> = props => {
         <header
           css={[outer, SiteHeader]}
           style={{
-            background: 'linear-gradient(rgb(212, 241, 241), #fff 60%)',
+            background: `linear-gradient(${colors.iceberg}, #fff 60%)`,
           }}
         >
           <div css={inner}>

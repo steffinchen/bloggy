@@ -6,6 +6,7 @@ import { css } from '@emotion/core';
 
 import SubscribeModal from '../subscribe/SubscribeOverlay';
 import SiteNavLogo from './SiteNavLogo';
+import { colors } from '../../styles/colors';
 
 const HomeNavRaise = css`
   @media (min-width: 900px) {
@@ -58,7 +59,7 @@ const NavStyles = css`
     display: block;
     margin: 0;
     padding: 10px 12px;
-    color: #59585d;
+    color: ${colors.grey};
     opacity: 0.8;
   }
 

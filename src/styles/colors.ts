@@ -10,4 +10,8 @@ export const colors = {
   whitegrey: '#e5eff5',
   pink: '#fa3a57',
   brown: '#a3821a',
+  morningGlory: '#92e2e1',
+  iceberg: '#d4f1f0',
+  tradewind: '#60b3a7',
+  grey: '#59585d',
 };
