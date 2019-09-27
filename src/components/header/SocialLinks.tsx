@@ -6,6 +6,7 @@ import config from '../../website-config';
 import Facebook from '../icons/facebook';
 import Instagram from '../icons/instagram';
 import SubscribeModal from '../subscribe/SubscribeOverlay';
+import Email from '../icons/email';
 
 const SocialLinks = styled.div`
   display: flex;
@@ -49,17 +50,6 @@ class Social extends React.Component {
   render() {
     return (
       <SocialLinks>
-        {config.facebook && (
-          <a
-            css={Icon}
-            href={config.facebook}
-            target="_blank"
-            title="Facebook"
-            rel="noopener noreferrer"
-          >
-            <Facebook />
-          </a>
-        )}
         {config.instagram && (
           <a
             css={Icon}
@@ -71,6 +61,23 @@ class Social extends React.Component {
             <Instagram />
           </a>
         )}
+        {config.facebook && (
+          <a
+            css={Icon}
+            href={config.facebook}
+            target="_blank"
+            title="Facebook"
+            rel="noopener noreferrer"
+          >
+            <Facebook />
+          </a>
+        )}
+        {config.email && (
+          <a css={Icon} href={'mailto:' + config.email} title="Email" rel="noopener noreferrer">
+            <Email />
+          </a>
+        )}
+
         {config.showSubscribe && (
           <SubscribeButton onClick={this.openModal}>Subscribe</SubscribeButton>
         )}

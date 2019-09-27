@@ -2,10 +2,10 @@
 import * as React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
-const Facebook: React.FC = () => {
+const Email: React.FC = () => {
   const data = useStaticQuery(graphql`
     query {
-      img: file(relativePath: { eq: "img/facebook-icon.png" }) {
+      img: file(relativePath: { eq: "img/email-icon.png" }) {
         childImageSharp {
           fixed {
             ...GatsbyImageSharpFixed
@@ -17,4 +17,4 @@ const Facebook: React.FC = () => {
   return <img style={{ maxHeight: '50px' }} src={data.img.childImageSharp.fixed.src} />;
 };
 
-export default Facebook;
+export default Email;
