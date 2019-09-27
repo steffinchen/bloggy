@@ -1,7 +1,6 @@
 import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import * as _ from 'lodash';
-import { setLightness } from 'polished';
 import * as React from 'react';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
@@ -58,10 +57,14 @@ const PostFullMeta = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: ${colors.midgrey};
+  color: ${colors.tradewind};
   font-size: 1.4rem;
   font-weight: 600;
   text-transform: uppercase;
+
+  a {
+    color: ${colors.tradewind};
+  }
 
   @media (max-width: 500px) {
     font-size: 1.2rem;
@@ -69,13 +72,11 @@ const PostFullMeta = styled.section`
   }
 `;
 
-const PostFullMetaDate = styled.time`
-  color: ${colors.blue};
-`;
+const PostFullMetaDate = styled.time``;
 
 export const PostFullTitle = styled.h1`
   margin: 0;
-  color: ${setLightness('0.05', colors.darkgrey)};
+  color: ${colors.grey};
   @media (max-width: 500px) {
     font-size: 2.9rem;
   }

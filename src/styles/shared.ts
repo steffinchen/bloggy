@@ -44,7 +44,9 @@ export const PostFeed = css`
   display: flex;
   flex-wrap: wrap;
   margin: 0 -20px;
-  padding: 40px 0 0 0;
+  @media (min-width: 900px) {
+    padding: 40px 0 0 0;
+  }
 `;
 
 export const PostFeedRaise = css`

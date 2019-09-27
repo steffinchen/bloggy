@@ -11,7 +11,9 @@ import Email from '../icons/email';
 const SocialLinks = styled.div`
   display: flex;
   justify-content: flex-end;
-  margin-top: -50px;
+  @media (min-width: 500px) {
+    margin-top: -50px;
+  }
 `;
 
 const SubscribeButton = styled.a`

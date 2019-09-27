@@ -22,6 +22,7 @@ import Helmet from 'react-helmet';
 import config from '../website-config';
 import { colors } from '../styles/colors';
 import SocialLinks from '../components/header/SocialLinks';
+import styled from '@emotion/styled';
 
 interface TagTemplateProps {
   pathContext: {
@@ -52,6 +53,12 @@ interface TagTemplateProps {
     };
   };
 }
+
+const HeaderInner = styled.div`
+  @media (min-width: 900px) {
+    padding-bottom: 75px;
+  }
+`;
 
 const Tags: React.FC<TagTemplateProps> = props => {
   const tag = props.pageContext.tag ? props.pageContext.tag : '';
@@ -88,12 +95,7 @@ const Tags: React.FC<TagTemplateProps> = props => {
             background: `linear-gradient(${colors.iceberg}, #fff 30%)`,
           }}
         >
-          <div
-            css={inner}
-            style={{
-              paddingBottom: '75px',
-            }}
-          >
+          <HeaderInner css={inner}>
             <SiteNav isHome={false} />
             <SocialLinks />
             <SiteHeaderContent>
@@ -110,7 +112,7 @@ const Tags: React.FC<TagTemplateProps> = props => {
                 )}
               </SiteDescription>
             </SiteHeaderContent>
-          </div>
+          </HeaderInner>
         </header>
         <main id="site-main" css={[SiteMain, outer]}>
           <div css={inner}>

@@ -24,6 +24,7 @@ import {
   SiteTitle,
 } from '../styles/shared';
 import { PageContext } from './post';
+import styled from '@emotion/styled';
 
 const HomePosts = css`
   @media (min-width: 795px) {
@@ -64,6 +65,12 @@ const HomePosts = css`
     .post-card:nth-of-type(6n + 1):not(.no-image) .post-card-meta {
       padding: 0 40px 30px;
     }
+  }
+`;
+
+const HeaderInner = styled.div`
+  @media (min-width: 900px) {
+    padding-bottom: 75px;
   }
 `;
 
@@ -114,12 +121,7 @@ const IndexPage: React.FC<IndexProps> = props => {
             background: `linear-gradient(${colors.iceberg}, #fff 60%)`,
           }}
         >
-          <div
-            css={inner}
-            style={{
-              paddingBottom: '75px',
-            }}
-          >
+          <HeaderInner css={inner}>
             <SiteNav isHome />
             <SiteHeaderContent>
               <SiteTitle>
@@ -135,7 +137,7 @@ const IndexPage: React.FC<IndexProps> = props => {
               </SiteTitle>
             </SiteHeaderContent>
             <SocialLinks />
-          </div>
+          </HeaderInner>
         </header>
         <main id="site-main" css={[SiteMain, outer]}>
           <div css={inner}>
