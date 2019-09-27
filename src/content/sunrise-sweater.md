@@ -9,7 +9,7 @@ tags:
   - Knitting
 ---
 
-The first two sweater I've knit where classical beginner patterns: knit a few squares and seam them together. There are only quite simple techniques involved so as to make them less daunting. However, they also involve one thing I am absolutely horrible at and don't like at all: seaming. After having done it a few times now the seams look acceptable, but still not as nice as if I would have knit in the around.
+The first two sweater I've knit were classical beginner patterns: knit a few squares and seam them together. There are only quite simple techniques involved so as to make them less daunting. However, they also involve one thing I am absolutely horrible at and don't like at all: seaming. After having done it a few times now the seams look acceptable, but still not as nice as if I would have knit in the around.
 
 After some sweaters came my first cardigan: Harvest by TinCanKnits. Hurray, no seaming! What I didn't consider though was how much purling is involved in a carding (yes, roughly 50 percent). So this motivated me to try my first "classic" sweater.
 
