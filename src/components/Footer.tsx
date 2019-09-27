@@ -10,10 +10,10 @@ import config from '../website-config';
 
 const SiteFooter = css`
   position: relative;
-  padding-top: 20px;
-  padding-bottom: 60px;
-  color: #fff;
-  background: ${setLightness('0.0015', colors.darkgrey)};
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: ${colors.grey};
+  background: linear-gradient(#fff, ${colors.iceberg} 50%);
 `;
 
 const SiteFooterContent = css`
@@ -21,13 +21,11 @@ const SiteFooterContent = css`
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  color: rgba(255, 255, 255, 0.7);
   font-size: 1.3rem;
   a {
-    color: rgba(255, 255, 255, 0.7);
+    color: ${colors.grey};
   }
   a:hover {
-    color: rgba(255, 255, 255, 1);
     text-decoration: none;
   }
   @media (max-width: 650px) {
@@ -51,7 +49,7 @@ const SiteFooterNav = styled.nav`
     display: block;
     width: 2px;
     height: 2px;
-    background: #fff;
+    background: ${colors.grey};
     border-radius: 100%;
   }
 
@@ -89,8 +87,6 @@ const Footer: React.FC = () => {
               Instagram
             </a>
           )}
-
-          <a href="/rss.xml">RSS</a>
         </SiteFooterNav>
       </div>
     </footer>
