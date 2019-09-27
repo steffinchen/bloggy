@@ -4,7 +4,7 @@ author: Steffi
 tags: ['Pattern', 'Knitting']
 image: img/twinkle-hat/hat_in_progress.jpg
 date: '2019-08-18T10:00:00.000Z'
-draft: false
+draft: true
 ---
 
 The Twinkle Hat is a simple hat that is worked in the round and uses a combination of knit and slip stitches to create a beautiful texture.
