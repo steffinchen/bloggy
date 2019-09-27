@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 
 import Footer from '../components/Footer';
 import SiteNav from '../components/header/SiteNav';
+import SocialLinks from '../components/header/SocialLinks';
 import PostCard from '../components/PostCard';
 import Wrapper from '../components/Wrapper';
 import IndexLayout from '../layouts';
@@ -16,7 +17,6 @@ import {
   outer,
   PostFeed,
   PostFeedRaise,
-  SiteDescription,
   SiteHeader,
   SiteHeaderContent,
   SiteMain,
@@ -77,11 +77,6 @@ export interface IndexProps {
         fixed: any;
       };
     };
-    header: {
-      childImageSharp: {
-        fluid: any;
-      };
-    };
     allMarkdownRemark: {
       edges: Array<{
         node: PageContext;
@@ -91,9 +86,6 @@ export interface IndexProps {
 }
 
 const IndexPage: React.FC<IndexProps> = props => {
-  const width = props.data.header.childImageSharp.fluid.sizes.split(', ')[1].split('px')[0];
-  const height = String(Number(width) / props.data.header.childImageSharp.fluid.aspectRatio);
-
   return (
     <IndexLayout css={HomePosts}>
       <Helmet>
@@ -105,10 +97,6 @@ const IndexPage: React.FC<IndexProps> = props => {
         <meta property="og:title" content={config.title} />
         <meta property="og:description" content={config.description} />
         <meta property="og:url" content={config.siteUrl} />
-        <meta
-          property="og:image"
-          content={`${config.siteUrl}${props.data.header.childImageSharp.fluid.src}`}
-        />
         {config.facebook && <meta property="article:publisher" content={config.facebook} />}
         {config.googleSiteVerification && (
           <meta name="google-site-verification" content={config.googleSiteVerification} />
@@ -117,26 +105,21 @@ const IndexPage: React.FC<IndexProps> = props => {
         <meta name="twitter:title" content={config.title} />
         <meta name="twitter:description" content={config.description} />
         <meta name="twitter:url" content={config.siteUrl} />
-        <meta
-          name="twitter:image"
-          content={`${config.siteUrl}${props.data.header.childImageSharp.fluid.src}`}
-        />
-        <meta property="og:image:width" content={width} />
-        <meta property="og:image:height" content={height} />
       </Helmet>
       <Wrapper>
         <header
           css={[outer, SiteHeader]}
           style={{
-            backgroundImage: `url('${props.data.header.childImageSharp.fluid.src}')`,
+            background: 'linear-gradient(rgb(212, 241, 241), #fff 60%)',
           }}
         >
           <div css={inner}>
+            <SiteNav isHome />
             <SiteHeaderContent>
               <SiteTitle>
                 {props.data.logo ? (
                   <img
-                    style={{ maxHeight: '45px' }}
+                    style={{ maxHeight: '170px' }}
                     src={props.data.logo.childImageSharp.fixed.src}
                     alt={config.title}
                   />
@@ -144,9 +127,8 @@ const IndexPage: React.FC<IndexProps> = props => {
                   config.title
                 )}
               </SiteTitle>
-              <SiteDescription>{config.description}</SiteDescription>
             </SiteHeaderContent>
-            <SiteNav isHome />
+            <SocialLinks />
           </div>
         </header>
         <main id="site-main" css={[SiteMain, outer]}>
@@ -179,21 +161,12 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   query blogPageQuery($skip: Int!, $limit: Int!) {
-    logo: file(relativePath: { eq: "img/icon_white.png" }) {
+    logo: file(relativePath: { eq: "img/logo.png" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
         fixed {
           ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    header: file(relativePath: { eq: "img/blog-cover.jpg" }) {
-      childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fluid(maxWidth: 2000) {
-          ...GatsbyImageSharpFluid
         }
       }
     }

@@ -4,22 +4,15 @@ import * as React from 'react';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 
-import { SocialLink } from '../../styles/shared';
-import config from '../../website-config';
-import Facebook from '../icons/facebook';
-import Instagram from '../icons/instagram';
 import SubscribeModal from '../subscribe/SubscribeOverlay';
 import SiteNavLogo from './SiteNavLogo';
 
 const HomeNavRaise = css`
   @media (min-width: 900px) {
-    position: relative;
-    top: -70px;
   }
 `;
 
 const SiteNavStyles = css`
-  position: relative;
   z-index: 300;
   display: flex;
   justify-content: space-between;
@@ -65,50 +58,13 @@ const NavStyles = css`
     display: block;
     margin: 0;
     padding: 10px 12px;
-    color: #fff;
+    color: #59585d;
     opacity: 0.8;
   }
 
   li a:hover {
     text-decoration: none;
     opacity: 1;
-  }
-`;
-
-const SiteNavRight = styled.div`
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  height: 40px;
-
-  @media (max-width: 700px) {
-    display: none;
-  }
-`;
-
-const SocialLinks = styled.div`
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  a:last-of-type {
-    padding-right: 20px;
-  }
-`;
-
-const SubscribeButton = styled.a`
-  display: block;
-  padding: 4px 10px;
-  border: #fff 1px solid;
-  color: #fff;
-  font-size: 1.2rem;
-  line-height: 1em;
-  border-radius: 10px;
-  opacity: 0.8;
-
-  :hover {
-    text-decoration: none;
-    opacity: 1;
-    cursor: pointer;
   }
 `;
 
@@ -147,36 +103,6 @@ class SiteNav extends React.Component<SiteNavProps> {
             </li>
           </ul>
         </SiteNavLeft>
-        <SiteNavRight>
-          <SocialLinks>
-            {config.facebook && (
-              <a
-                css={SocialLink}
-                href={config.facebook}
-                target="_blank"
-                title="Facebook"
-                rel="noopener noreferrer"
-              >
-                <Facebook />
-              </a>
-            )}
-            {config.instagram && (
-              <a
-                css={SocialLink}
-                href={config.instagram}
-                title="Instagram"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Instagram />
-              </a>
-            )}
-          </SocialLinks>
-          {config.showSubscribe && (
-            <SubscribeButton onClick={this.openModal}>Subscribe</SubscribeButton>
-          )}
-          {config.showSubscribe && <SubscribeModal ref={this.subscribe} />}
-        </SiteNavRight>
       </nav>
     );
   }

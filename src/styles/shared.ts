@@ -1,7 +1,7 @@
 import { css } from '@emotion/core';
 import styled from '@emotion/styled';
 import { colors } from './colors';
-import { darken, lighten } from 'polished';
+import { lighten } from 'polished';
 
 export const outer = css`
   position: relative;
@@ -24,18 +24,20 @@ export const SiteTitle = styled.h1`
   z-index: 10;
   margin: 0;
   padding: 0;
-  font-size: 3.8rem;
+  font-size: 6rem;
   font-weight: 700;
+  text-shadow: 2px 2px 2px #878787;
 `;
 
 export const SiteDescription = styled.h2`
   z-index: 10;
   margin: 0;
   padding: 5px 0;
-  font-size: 2.2rem;
+  font-size: 3.2rem;
   font-weight: 300;
   letter-spacing: 0.5px;
   opacity: 0.8;
+  text-shadow: 2px 2px 2px #878787;
 `;
 
 export const PostFeed = css`
@@ -48,7 +50,6 @@ export const PostFeed = css`
 
 export const PostFeedRaise = css`
   @media (min-width: 900px) {
-    margin-top: -70px;
     padding-top: 0;
   }
 `;
@@ -71,14 +72,11 @@ export const SocialLink = css`
     fill: #fff;
   }
 `;
-
 export const SiteHeader = css`
   position: relative;
   padding-top: 12px;
   padding-bottom: 12px;
   color: #fff;
-  /* background: color(var(--darkgrey) l(-5%)) no-repeat center center; */
-  background: ${darken('0.05', colors.darkgrey)} no-repeat center center;
   background-size: cover;
 `;
 
@@ -87,8 +85,7 @@ export const SiteHeaderContent = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10vw 4vw;
-  min-height: 200px;
+  min-height: 170px;
   max-height: 450px;
   text-align: center;
 `;

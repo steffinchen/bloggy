@@ -473,10 +473,6 @@ const GlobalStyles = css`
     font-size: 1.4rem;
     font-weight: 500;
   }
-
-  body {
-    background: #f4f8fb;
-  }
 `;
 
 const IndexLayout: React.FC<IndexProps> = props => {
