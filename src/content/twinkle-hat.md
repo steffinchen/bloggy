@@ -9,10 +9,12 @@ draft: false
 
 The Twinkle Hat is a simple hat that is worked in the round and uses a combination of knit and slip stitches to create a beautiful texture.
 
+The stitch used to create the squishy texture is called 'Eye of Partridge' and is often used to enforce the heel of a sock.
+
 ## Materials
 
 - Size 5mm and 4mm knitting needles (circular or double pointed)
-- 250yds / 230m sport weight yarn (recommended: "Freia Ombré M/S Sport (Refined) - Gradient", shown in "Aloha")
+- 250yds / 230m sport weight yarn (recommended: "Freia Ombré M/S Sport (Refined) Gradient", shown in "Aloha")
 - Tapestry needle
 - Scissors
 - Measuring tape
@@ -29,6 +31,8 @@ Adult
 
 ## Finished hat measurements
 
+Unstretched: circumference: 22''
+
 ## Notes
 
 - The hat is worked in the round. I prefer to use circular needles (usually with the magic loop technique), but the pattern also works for double pointed needles.
@@ -42,11 +46,11 @@ Adult
 
 Using 4mm needles:
 
-CO 126 sts and join to work in the round.
+CO 120 sts and join to work in the round.
 
 ### Brim
 
-Rd 1 - 12: \*K1, P1\* around
+**Rd 1 - 12:** \*K1, P1\* around
 
 ### Main
 
@@ -60,7 +64,7 @@ Switch to 5mm needles.
 
 **Rd 4:** \*Sl1, K1\* around
 
-**Rd 5 - 64:** Repeat the above 4 rounds (or until hat measures approx. 6'' / 15cm)
+**Rd 5 - 64:** Repeat the above 4 rounds (or until hat - incl. brim - measures approx. 6'' / 15cm)
 
 ### Crown
 
@@ -72,7 +76,7 @@ Summary: Decrease 8sts every 2nd row
 
 **Rd 66:** \*K12, K2Tog\* around (104sts)
 
-**Rd 68:** \*K1, Sl1\* around
+**Rd 68:** \*Sl1, K1\* around
 
 **Rd 69:** \*K11, K2Tog\* around (96sts)
 
@@ -80,7 +84,7 @@ Summary: Decrease 8sts every 2nd row
 
 **Rd 70:** \*K10, K2Tog\* around (88sts)
 
-**Rd 70:** \*K1, Sl1\* around
+**Rd 70:** \*Sl1, K1\* around
 
 **Rd 72:** \*K9, K2Tog\* around (80sts)
 
@@ -88,7 +92,7 @@ Summary: Decrease 8sts every 2nd row
 
 **Rd 74:** \*K8, K2Tog\* around (72sts)
 
-**Rd 75:** \*K1, Sl1\* around
+**Rd 75:** \*Sl1, K1\* around
 
 **Rd 76:** \*K7, K2Tog\* around (64sts)
 
@@ -96,7 +100,7 @@ Summary: Decrease 8sts every 2nd row
 
 **Rd 78:** \*K6, K2Tog\* around (56sts)
 
-**Rd 79:** \*K1, Sl1\* around
+**Rd 79:** \*Sl1, K1\* around
 
 **Rd 80:** \*K5, K2Tog\* around (48sts)
 
@@ -104,7 +108,7 @@ Summary: Decrease 8sts every 2nd row
 
 **Rd 82:** \*K4, K2Tog\* around (40sts)
 
-**Rd 83:** \*K1, Sl1\* around
+**Rd 83:** \*Sl1, K1\* around
 
 **Rd 84:** \*K3, K2Tog\* around (32sts)
 
@@ -112,7 +116,7 @@ Summary: Decrease 8sts every 2nd row
 
 **Rd 86:** \*K2, K2Tog\* around (24sts)
 
-**Rd 87:** \*K1, Sl1\* around
+**Rd 87:** \*Sl1, K1\* around
 
 **Rd 89:** \*K1, K2Tog\* around (16sts)
 
@@ -126,9 +130,15 @@ Pull tight, make a knot and weave in ends.
 ## Abbreviations
 
 CO - Cast on
+
 K - Knit
+
 K2Tog - Knit 2 stitches together
+
 P - Purl
+
 Rd - Round
+
 Sl - Slip stitch (unless indicated otherwise, always slip purlwise)
+
 sts - stitches
