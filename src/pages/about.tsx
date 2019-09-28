@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { css } from '@emotion/core';
 import Helmet from 'react-helmet';
+import styled from '@emotion/styled';
 
 import IndexLayout from '../layouts';
 import Wrapper from '../components/Wrapper';
@@ -11,6 +12,7 @@ import { PostFullContent } from '../components/PostContent';
 import Footer from '../components/Footer';
 import SocialLinks from '../components/header/SocialLinks';
 import { colors } from '../styles/colors';
+import { graphql } from 'gatsby';
 
 const PageTemplate = css`
   .site-main {
@@ -19,7 +21,22 @@ const PageTemplate = css`
   }
 `;
 
-const About: React.FC = () => (
+const StyledImage = styled.img`
+  float: right;
+  border-radius: 50%;
+  margin-left: 10px !important;
+  margin-top: 0 !important;
+`;
+
+interface AboutProps {
+  data: {
+    img: {
+      childImageSharp: { fixed: any };
+    };
+  };
+}
+
+const About: React.FC<AboutProps> = ({ data }) => (
   <IndexLayout>
     <Helmet>
       <title>About</title>
@@ -44,39 +61,30 @@ const About: React.FC = () => (
 
           <PostFullContent className="post-full-content">
             <div className="post-content">
+              <StyledImage src={data.img.childImageSharp.fixed.src} alt="Portrait" />
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc commodo finibus leo,
-                non tempus magna vehicula ac. Maecenas mollis ante finibus pharetra imperdiet.
-                Maecenas in aliquam purus. Nam et massa a nulla fermentum dapibus sit amet in neque.
-                Ut ipsum ipsum, rhoncus a sodales pellentesque, interdum a elit. Nullam aliquam
-                tellus nibh, eget laoreet dui aliquet non. Vestibulum malesuada ante at diam tempus,
-                ac interdum risus scelerisque. Sed ipsum neque, vulputate porta diam eget, consequat
-                blandit nulla. Integer volutpat velit vitae purus lacinia aliquam. Integer bibendum
-                ipsum vitae magna pulvinar, nec vehicula dolor vulputate. Nulla eu massa id orci
-                placerat finibus vel sit amet eros. Vestibulum quis consequat massa. Sed sagittis
-                sollicitudin massa at commodo. Praesent diam nisi, imperdiet posuere eleifend nec,
-                blandit ac massa.
+                Hi, I am Steffi! I am the maker behind SkillfullyTangled and I love all things yarn
+                related. I first learned to knit and crochet when I was in elementary school,
+                although I didn't stick with it for very long.
               </p>
               <p>
-                Vestibulum semper pretium ipsum nec congue. Ut ac eros nisi. Donec leo sem, aliquam
-                mollis sapien ultrices, dapibus congue diam. Proin viverra dapibus blandit. Ut
-                mauris tellus, tristique id felis vel, venenatis vestibulum nunc. Nam molestie
-                pulvinar nibh, eget egestas augue. Maecenas tellus arcu, mattis ut ipsum non,
-                sollicitudin convallis nunc. Donec nec neque tristique, aliquet lacus id, laoreet
-                nunc. Cras dapibus nisi nulla, ullamcorper faucibus neque suscipit ac. Donec eget
-                orci venenatis justo lobortis volutpat. Proin vel placerat nisl. Integer arcu nunc,
-                sodales eu fringilla non, aliquam non diam. Cras placerat, massa et faucibus
-                pretium, ante elit tincidunt tellus, tristique ultricies velit quam et massa.
+                About four years ago I decided to get back into crochet, mainly to crochet some
+                stuffed balls for our little kittens. From there I ventured more into amigurumi -
+                the Japanese art of creating 3-dimensional objects with crochet - and hats and
+                scarves. But one needs only so many teddy bears and hearts, and I wanted to make
+                more wearables like sweaters and socks. I decided to give knitting another go, and
+                thanks to online tutorials and videos (isn't the internet great!) I knitted my first
+                hat!
               </p>
               <p>
-                In nunc lacus, dapibus vitae lacus sit amet, efficitur iaculis neque. Suspendisse ut
-                tellus quis leo vestibulum tincidunt. Aenean nec enim ac dolor lacinia semper. Ut
-                sed laoreet libero. Nunc elementum sollicitudin accumsan. Nunc eu augue neque. Proin
-                a tortor nibh. Cras eu nisl ornare sapien feugiat pellentesque. Mauris dignissim vel
-                quam eu pellentesque. Integer sit amet posuere quam, eu ullamcorper odio. Nullam a
-                lacus tempus sapien dignissim ullamcorper. In hac habitasse platea dictumst. Proin
-                quis massa aliquam, feugiat tortor sit amet, tincidunt urna. Donec posuere pulvinar
-                lectus, ac semper ipsum vulputate quis.
+                I totally caught the bug, and and since then I've rarly put my needles down. I've
+                dabbled in dying yarn as well, and hope to do more of that soon. At some point I am
+                also intrigued in trying out weaving and spinning.
+              </p>
+              <p>
+                In my spare time I also enjoy reading: mainly crime novels, whodunnits and
+                thrillers. Some of my favorite authors are Agatha Christie, Anthony Horowitz and
+                Harlan Coben.
               </p>
             </div>
           </PostFullContent>
@@ -86,5 +94,17 @@ const About: React.FC = () => (
     </Wrapper>
   </IndexLayout>
 );
+
+export const pageQuery = graphql`
+  query {
+    img: file(relativePath: { eq: "img/me.jpg" }) {
+      childImageSharp {
+        fixed {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`;
 
 export default About;
