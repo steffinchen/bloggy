@@ -50,79 +50,94 @@ CO 120 sts and join to work in the round.
 
 ### Brim
 
-**Rd 1 - 12:** \*K1, P1\* around
+**Row 1 - 12:** \*K1, P1\* around
 
 ### Main
 
 Switch to 5mm needles.
 
-**Rd 1:** \*K\* around
+**Row 1:** \*K\* around
 
-**Rd 2:** \*K1, Sl1\* around
+**Row 2:** \*K1, Sl1\* around
 
-**Rd 3:** \*K\* around
+**Row 3:** \*K\* around
 
-**Rd 4:** \*Sl1, K1\* around
+**Row 4:** \*Sl1, K1\* around
 
-**Rd 5 - 64:** Repeat the above 4 rounds (or until hat - incl. brim - measures approx. 6'' / 15cm)
+**Row 5 - 64:** Repeat the above 4 rounds (or until hat - incl. brim - measures approx. 6'' / 15cm)
 
 ### Crown
 
 Summary: Decrease 8sts every 2nd row
 
-**Rd 65:** \*K13, K2Tog\* around (112sts)
+======= Alternative
 
-**Rd 66:** \*K1, Sl1\* around
+**Setup:** \*K27, Sl2-K1-P2sso, place marker\* around (112sts)
 
-**Rd 66:** \*K12, K2Tog\* around (104sts)
+**Row 1:** \*K1, Sl1\* around
 
-**Rd 68:** \*Sl1, K1\* around
+**Row 2:** \*K until 3 sts before marker, Sl2-K1-P2sso\* around
 
-**Rd 69:** \*K11, K2Tog\* around (96sts)
+**Row 3:** \*Sl1, K1\* around
 
-**Rd 70:** \*K1, Sl1\* around
+**Row 4:** \*K until 3 sts before marker, Sl2-K1-P2sso\* around
 
-**Rd 70:** \*K10, K2Tog\* around (88sts)
+Repeat Rows 1 - 4 until there are 16 sts left
 
-**Rd 70:** \*Sl1, K1\* around
+Cut yarn and using the darning needle, thread tail through remaining stitches.
+Pull tight, make a knot and weave in ends.
 
-**Rd 72:** \*K9, K2Tog\* around (80sts)
+========
 
-**Rd 73:** \*K1, Sl1\* around
+**Row 65:** \*K27, Sl2-K1-P2sso\* around (112sts)
 
-**Rd 74:** \*K8, K2Tog\* around (72sts)
+**Row 66:** \*K1, Sl1\* around
 
-**Rd 75:** \*Sl1, K1\* around
+**Row 67:** \*K25, Sl2-K1-P2sso\* around (104sts)
 
-**Rd 76:** \*K7, K2Tog\* around (64sts)
+**Row 68:** \*Sl1, K1\* around
 
-**Rd 77:** \*K1, Sl1\* around
+**Row 69:** \*K23, Sl2-K1-P2sso\* around (96sts)
 
-**Rd 78:** \*K6, K2Tog\* around (56sts)
+**Row 70:** \*K1, Sl1\* around
 
-**Rd 79:** \*Sl1, K1\* around
+**Row 71:** \*K21, Sl2-K1-P2sso\* around (88sts)
 
-**Rd 80:** \*K5, K2Tog\* around (48sts)
+**Row 72:** \*Sl1, K1\* around
 
-**Rd 81:** \*K1, Sl1\* around
+**Row 73:** \*K19, Sl2-K1-P2sso\* around (80sts)
 
-**Rd 82:** \*K4, K2Tog\* around (40sts)
+**Row 74:** \*K1, Sl1\* around
 
-**Rd 83:** \*Sl1, K1\* around
+**Row 75:** \*K17, Sl2-K1-P2sso\* around (72sts)
 
-**Rd 84:** \*K3, K2Tog\* around (32sts)
+**Row 76:** \*Sl1, K1\* around
 
-**Rd 85:** \*K1, Sl1\* around
+**Row 77:** \*K15, Sl2-K1-P2sso\* around (64sts)
 
-**Rd 86:** \*K2, K2Tog\* around (24sts)
+**Row 78:** \*K1, Sl1\* around
 
-**Rd 87:** \*Sl1, K1\* around
+**Row 79:** \*K13, Sl2-K1-P2sso\* around (56sts)
 
-**Rd 89:** \*K1, K2Tog\* around (16sts)
+**Row 80:** \*Sl1, K1\* around
 
-**Rd 90:** \*K1, Sl1\* around
+**Row 81:** \*K11, Sl2-K1-P2sso\* around (48sts)
 
-**Rd 91:** \* K2Tog\* around (8sts)
+**Row 82:** \*K1, Sl1\* around
+
+**Row 83:** \*K9, Sl2-K1-P2sso\* around (40sts)
+
+**Row 84:** \*Sl1, K1\* around
+
+**Row 85:** \*K7, Sl2-K1-P2sso\* around (32sts)
+
+**Row 86:** \*K1, Sl1\* around
+
+**Row 87:** \*K5, Sl2-K1-P2sso\* around (24sts)
+
+**Row 88:** \*Sl1, K1\* around
+
+**Row 89:** \*K3, Sl2-K1-P2sso\* around (16sts)
 
 Cut yarn and using the darning needle, thread tail through remaining stitches.
 Pull tight, make a knot and weave in ends.
@@ -134,6 +149,8 @@ CO - Cast on
 K - Knit
 
 K2Tog - Knit 2 stitches together
+
+Sl2-K1-P2sso -
 
 P - Purl
 
