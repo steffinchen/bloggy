@@ -9,17 +9,18 @@ draft: false
 
 The Twinkle Hat is a simple hat that is worked in the round and uses a combination of knit and slip stitches to create a beautiful texture.
 
-The stitch used to create the squishy texture is called 'Eye of Partridge' and is often used to enforce the heel of a sock.
+The stitch used to create the squishy texture is called 'Eye of Partridge' and is often used to enforce the heel of a sock. I love the subtle texture it creates and wanted to show off the stitch in a different place than the heel of a sock, which, let's be honest, not many will see.
 
 ## Materials
 
 - Size 5mm and 4mm knitting needles (circular or double pointed)
-- 250yds / 230m sport weight yarn (recommended: "Freia Ombré M/S Sport (Refined) Gradient", shown in "Aloha")
+- 175yds / 160m sport weight yarn
+- Stitch markers
 - Tapestry needle
 - Scissors
 - Measuring tape
 
-![Yarn](img/twinkle-hat/freia_yarn.png)
+![The yarn I used: "Freia Ombré" in "Aloha"](img/twinkle-hat/freia_yarn.png)
 
 ## Gauge
 
@@ -35,10 +36,12 @@ Unstretched: circumference: 22''
 
 ## Notes
 
+- Sample is shown in "Freia Ombré M/S Sport (Refined) Gradient", color "Aloha". I used roughly 2/3 of a skein for the hat, so the other 1/3 is great to make a pompom!
 - The hat is worked in the round. I prefer to use circular needles (usually with the magic loop technique), but the pattern also works for double pointed needles.
-- If you'd like to adjust the number of stitches for the cast-on, make sure it's a multiple of two.
 - The ribbed brim is about 1.5'' tall, add or subtract rounds depending on how high you would like it to be
 - I find it helpful to use a stitch marker to mark the beginning of a round
+- The pattern uses a stitch to decrease two stitches at once. This helps to preserve the Eye of Partridge pattern. I chose the "Sl2-K1-P2sso" to do so, but feel free to use another double decrease. [TinCanKnits has a great how-to explaining the Sl2-K1-P2sso](https://blog.tincanknits.com/2016/01/21/central-double-decrease/)
+- If you'd like to adjust the number of stitches for the cast-on, make sure it's a multiple of two. For the decrease, place the four decrease points (Sl2-K1-P2sso) equidistant in the row - the exact placement doesn't matter
 
 ## Pattern
 
@@ -50,7 +53,7 @@ CO 120 sts and join to work in the round.
 
 ### Brim
 
-**Row 1 - 12:** \*K1, P1\* around
+**Rows 1 - 12:** \*K1, P1\* around
 
 ### Main
 
@@ -64,80 +67,23 @@ Switch to 5mm needles.
 
 **Row 4:** \*Sl1, K1\* around
 
-**Row 5 - 64:** Repeat the above 4 rounds (or until hat - incl. brim - measures approx. 6'' / 15cm)
+**Rows 5 - 64:** Repeat the above 4 row (or until hat - incl. brim - measures approx. 6'' / 15cm)
 
 ### Crown
 
 Summary: Decrease 8sts every 2nd row
 
-======= Alternative
-
 **Setup:** \*K27, Sl2-K1-P2sso, place marker\* around (112sts)
 
 **Row 1:** \*K1, Sl1\* around
 
-**Row 2:** \*K until 3 sts before marker, Sl2-K1-P2sso\* around
+**Row 2:** \*K until 3 sts before marker, Sl2-K1-P2sso\* around (decreased 8sts)
 
 **Row 3:** \*Sl1, K1\* around
 
-**Row 4:** \*K until 3 sts before marker, Sl2-K1-P2sso\* around
+**Row 4:** \*K until 3 sts before marker, Sl2-K1-P2sso\* around (decreased 8sts)
 
 Repeat Rows 1 - 4 until there are 16 sts left
-
-Cut yarn and using the darning needle, thread tail through remaining stitches.
-Pull tight, make a knot and weave in ends.
-
-========
-
-**Row 65:** \*K27, Sl2-K1-P2sso\* around (112sts)
-
-**Row 66:** \*K1, Sl1\* around
-
-**Row 67:** \*K25, Sl2-K1-P2sso\* around (104sts)
-
-**Row 68:** \*Sl1, K1\* around
-
-**Row 69:** \*K23, Sl2-K1-P2sso\* around (96sts)
-
-**Row 70:** \*K1, Sl1\* around
-
-**Row 71:** \*K21, Sl2-K1-P2sso\* around (88sts)
-
-**Row 72:** \*Sl1, K1\* around
-
-**Row 73:** \*K19, Sl2-K1-P2sso\* around (80sts)
-
-**Row 74:** \*K1, Sl1\* around
-
-**Row 75:** \*K17, Sl2-K1-P2sso\* around (72sts)
-
-**Row 76:** \*Sl1, K1\* around
-
-**Row 77:** \*K15, Sl2-K1-P2sso\* around (64sts)
-
-**Row 78:** \*K1, Sl1\* around
-
-**Row 79:** \*K13, Sl2-K1-P2sso\* around (56sts)
-
-**Row 80:** \*Sl1, K1\* around
-
-**Row 81:** \*K11, Sl2-K1-P2sso\* around (48sts)
-
-**Row 82:** \*K1, Sl1\* around
-
-**Row 83:** \*K9, Sl2-K1-P2sso\* around (40sts)
-
-**Row 84:** \*Sl1, K1\* around
-
-**Row 85:** \*K7, Sl2-K1-P2sso\* around (32sts)
-
-**Row 86:** \*K1, Sl1\* around
-
-**Row 87:** \*K5, Sl2-K1-P2sso\* around (24sts)
-
-**Row 88:** \*Sl1, K1\* around
-
-**Row 89:** \*K3, Sl2-K1-P2sso\* around (16sts)
 
 Cut yarn and using the darning needle, thread tail through remaining stitches.
 Pull tight, make a knot and weave in ends.
@@ -150,7 +96,7 @@ K - Knit
 
 K2Tog - Knit 2 stitches together
 
-Sl2-K1-P2sso -
+Sl2-K1-P2sso - Slip two knitwise, knit 1, pass 2 slipped sts over
 
 P - Purl
 
