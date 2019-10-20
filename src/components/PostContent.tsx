@@ -547,6 +547,13 @@ export const PostFullContent = styled.section`
     min-width: 100%;
   }
   /* End Syntax Highlighting */
+
+  figcaption {
+    font-style: italic;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.9em;
+  }
 `;
 
 const renderAst = new RehypeReact({
