@@ -19,32 +19,7 @@ module.exports = {
         path: path.join(__dirname, 'src', 'content'),
       },
     },
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
-          {
-            resolve: 'gatsby-remark-responsive-iframe',
-            options: {
-              wrapperStyle: 'margin-bottom: 1rem',
-            },
-          },
-          'gatsby-remark-prismjs',
-          'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants',
-          'gatsby-remark-abbr',
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 1170,
-              quality: 90,
-              showCaptions: true,
-              withWebp: true,
-            },
-          },
-        ],
-      },
-    },
+
     'gatsby-transformer-json',
     {
       resolve: 'gatsby-plugin-canonical-urls',
@@ -73,26 +48,16 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
               maxWidth: 590,
+              showCaptions: false,
+              withWebp: true,
             },
           },
-        ],
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
           {
-            resolve: `gatsby-remark-images`,
+            resolve: 'gatsby-remark-external-links',
             options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
-              maxWidth: 590,
+              target: '_blank',
+              rel: 'nofollow noopener noreferrer',
             },
           },
         ],

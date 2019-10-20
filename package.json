@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-casper",
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "name": "skillfullytangled",
+  "description": "A knitting blog built with Gatsby using Casper as a starter",
   "version": "0.1.0",
   "private": true,
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Stefanie Wehrle <steffinchen@gmail.com>",
   "dependencies": {
     "@emotion/core": "^10.0.15",
     "@fortawesome/fontawesome-svg-core": "^1.2.21",
@@ -26,6 +26,7 @@
     "gatsby-plugin-typescript": "^2.1.11",
     "gatsby-remark-abbr": "^1.0.0",
     "gatsby-remark-copy-linked-files": "^2.1.23",
+    "gatsby-remark-external-links": "0.0.4",
     "gatsby-remark-images": "^3.1.11",
     "gatsby-remark-prismjs": "^3.3.16",
     "gatsby-remark-responsive-iframe": "^2.2.20",
