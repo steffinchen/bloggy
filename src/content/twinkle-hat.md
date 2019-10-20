@@ -24,19 +24,19 @@ The stitch used to create the squishy texture is called 'Eye of Partridge' and i
 
 ## Gauge
 
-22 sts / 4''
+25 sts / 4''
 
 ## Sizes
 
-Adult
+Adult (fits head circumferences between 20 - 24'')
 
 ## Finished hat measurements
 
-Unstretched: circumference: 22''
+Unstretched: circumference: 19''
 
 ## Notes
 
-- Sample is shown in "Freia Ombré M/S Sport (Refined) Gradient", color "Aloha". I used roughly 2/3 of a skein for the hat, so the other 1/3 is great to make a pompom!
+- Sample is shown in ["Freia Ombré M/S Sport (Refined) Gradient", color "Aloha"](https://www.ravelry.com/yarns/library/knitwhits-freia-handpaints-freia-ombre-m-s-sport-refined---gradient). I used roughly 2/3 of a skein for the hat, so the other 1/3 is great to make a pompom!
 - The hat is worked in the round. I prefer to use circular needles (usually with the magic loop technique), but the pattern also works for double pointed needles.
 - The ribbed brim is about 1.5'' tall, add or subtract rounds depending on how high you would like it to be
 - I find it helpful to use a stitch marker to mark the beginning of a round
