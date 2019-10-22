@@ -2,14 +2,16 @@
 title: 'Twinkle Hat'
 author: Steffi
 tags: ['Pattern', 'Knitting']
-image: img/twinkle-hat/hat_in_progress.jpg
+image: img/twinkle-hat/with_pompom.jpg
 date: '2019-09-27T10:00:00.000Z'
 draft: false
 ---
 
-The Twinkle Hat is a simple hat that is worked in the round and uses a combination of knit and slip stitches to create a beautiful texture.
+The Twinkle Hat is a simple hat that is worked in the round and uses a combination of knit and slip stitches to create a beautiful texture. It uses a light-weight yarn and it's perfect to keep you warm during those chilly fall days.
 
 The stitch used to create the squishy texture is called 'Eye of Partridge' and is often used to enforce the heel of a sock. I love the subtle texture it creates and wanted to show off the stitch in a different place than the heel of a sock, which, let's be honest, not many will see.
+
+![The Twinkle Hat](img/twinkle-hat/with_pompom.jpg)
 
 ## Materials
 
@@ -19,6 +21,7 @@ The stitch used to create the squishy texture is called 'Eye of Partridge' and i
 - Tapestry needle
 - Scissors
 - Measuring tape
+- Optional: pom-pom maker or finished pom-pom
 
 ![The yarn I used: "Freia Ombré" in "Aloha"](img/twinkle-hat/freia_yarn.png)
 
@@ -42,6 +45,8 @@ Unstretched: circumference: 19''
 - I find it helpful to use a stitch marker to mark the beginning of a round
 - The pattern uses a stitch to decrease two stitches at once. This helps to preserve the Eye of Partridge pattern. I chose the "Sl2-K1-P2sso" to do so, but feel free to use another double decrease. [TinCanKnits has a great how-to explaining the Sl2-K1-P2sso](https://blog.tincanknits.com/2016/01/21/central-double-decrease/)
 - If you'd like to adjust the number of stitches for the cast-on, make sure it's a multiple of two. For the decrease, place the four decrease points (Sl2-K1-P2sso) equidistant in the row - the exact placement doesn't matter
+
+![Hat in Progress](img/twinkle-hat/hat_in_progress.jpg)
 
 ## Pattern
 
@@ -87,6 +92,8 @@ Repeat Rows 1 - 4 until there are 16 sts left
 
 Cut yarn and using the darning needle, thread tail through remaining stitches.
 Pull tight, make a knot and weave in ends.
+
+Optional: add pom-pom
 
 ## Abbreviations
 
