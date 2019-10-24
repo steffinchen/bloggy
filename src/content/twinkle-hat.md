@@ -1,5 +1,5 @@
 ---
-title: 'Twinkle Hat'
+title: 'Eye of Partridge Hat'
 author: Steffi
 tags: ['Pattern', 'Knitting']
 image: img/twinkle-hat/with_pompom.jpg
@@ -7,21 +7,21 @@ date: '2019-09-27T10:00:00.000Z'
 draft: false
 ---
 
-The Twinkle Hat is a simple hat that is worked in the round and uses a combination of knit and slip stitches to create a beautiful texture. It uses a light-weight yarn and it's perfect to keep you warm during those chilly fall days.
+The Eye of Partridge Hat is a simple hat that is worked in the round and uses a combination of knit and slip stitches to create a beautiful texture. It uses a light-weight yarn and it's perfect to keep you warm during those chilly fall days.
 
 The stitch used to create the squishy texture is called 'Eye of Partridge' and is often used to enforce the heel of a sock. I love the subtle texture it creates and wanted to show off the stitch in a different place than the heel of a sock, which, let's be honest, not many will see.
 
-![The Twinkle Hat](img/twinkle-hat/with_pompom.jpg)
+![The Eye of Partridge Hat](img/twinkle-hat/with_pompom.jpg)
 
 ## Materials
 
-- Size 5mm and 4mm knitting needles (circular or double pointed)
+- Size 5mm (US 8) and 4mm (US 6) knitting needles (circular or double pointed) (I am a big fan of [KnitPro Interchangeable Circular Needles](https://www.lovecrafts.com/en-gb/p/knit-pro-symfonie-interchangeable-circular-needle-starter-set?utm_medium=affiliate&a_aid=47afbd68))
 - 175yds / 160m sport weight yarn
-- Stitch markers
-- Tapestry needle
-- Scissors
-- Measuring tape
-- Optional: pom-pom maker or finished pom-pom
+- [Stitch markers](https://www.lovecrafts.com/en-gb/p/knit-pro-locking-stitch-markers?utm_medium=affiliate&a_aid=47afbd68)
+- [Tapestry needle](https://www.lovecrafts.com/en-gb/p/knit-pro-tapestry-needle-set?utm_medium=affiliate&a_aid=47afbd68)
+- [Scissors](https://www.lovecrafts.com/en-gb/p/hemline-stork-scissors?utm_medium=affiliate&a_aid=47afbd68)
+- [Measuring tape](https://www.lovecrafts.com/en-gb/p/hemline-spring-loaded-tape-measure?utm_medium=affiliate&a_aid=47afbd68)
+- Optional: [pom-pom maker](https://www.lovecrafts.com/en-gb/p/addi-moon-pom-pom-maker?utm_medium=affiliate&a_aid=47afbd68) or finished pom-pom
 
 ![The yarn I used: "Freia Ombré" in "Aloha"](img/twinkle-hat/freia_yarn.png)
 
@@ -52,7 +52,7 @@ Unstretched: circumference: 19''
 
 ### Cast on
 
-Using 4mm needles:
+Using 4mm (US 6) needles:
 
 CO 120 sts and join to work in the round.
 
@@ -62,7 +62,7 @@ CO 120 sts and join to work in the round.
 
 ### Main
 
-Switch to 5mm needles.
+Switch to 5mm (US 8) needles.
 
 **Row 1:** \*K\* around
 

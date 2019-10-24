@@ -27,7 +27,7 @@ I decided on Icefall because I liked how the contrast color on the dark backgrou
 
 ## Choosing the yarn
 
-After comparing lots of yarn online, I went with Malabrigo Rios in superwash Merino DK. It's very high-quality wool that is not scratchy at all, and they have an amazingly big range of colors. And most yarns are tonal, meaning one skein includes many shades of the same color.
+After comparing lots of yarn online, I went with [Malabrigo Rios](https://www.lovecrafts.com/en-gb/p/malabrigo-rios?utm_medium=affiliate&a_aid=47afbd68) in superwash Merino DK. It's very high-quality wool that is not scratchy at all, and they have an amazingly big range of colors. And most yarns are tonal, meaning one skein includes many shades of the same color.
 
 I chose Winter Road as main color, and Whales Road, Cereza and Sunset as contrast colors.
 
@@ -61,3 +61,5 @@ I didn't have blocking mats yet, so I used the rarely used couch in our study wi
 Finally, the sweater is all done and ready to be tried on! Yay, it fits - but a bit looser than intended. A quick google search reveals why: I never washed and blocked my gauge swatch. Turns out superwash wool tends to relax quite a bit after washing. So my learning for next time: when swatching for a garment, wash and block the swatch!
 
 ![Close up of the sweater while wearing it](./img/sunrise-sweater/close_all_body.jpg)
+
+_This post contains affiliate links to products I recommend. If you purchase something from this page, I may receive a small percentage of the sale at no extra cost to you._
