@@ -2,7 +2,7 @@
 title: 'Eye of Partridge Hat'
 author: Steffi
 tags: ['Pattern', 'Knitting']
-image: img/twinkle-hat/with_pompom.jpg
+image: img/twinkle-hat/finished_hat.jpg
 date: '2019-09-27T10:00:00.000Z'
 draft: false
 ---
@@ -12,6 +12,8 @@ The Eye of Partridge Hat is a simple hat that is worked in the round and uses a 
 The stitch used to create the squishy texture is called 'Eye of Partridge' and is often used to enforce the heel of a sock. I love the subtle texture it creates and wanted to show off the stitch in a different place than the heel of a sock, which, let's be honest, not many will see.
 
 ![The Eye of Partridge Hat](img/twinkle-hat/with_pompom.jpg)
+
+![Grab a cup of tea and let's make a hat!](img/twinkle-hat/finished_hat.jpg)
 
 ## Materials
 
@@ -93,7 +95,11 @@ Repeat Rows 1 - 4 until there are 16 sts left
 Cut yarn and using the darning needle, thread tail through remaining stitches.
 Pull tight, make a knot and weave in ends.
 
-Optional: add pom-pom
+Optional: Add a pom-pom: use some yarn and a pom-pom maker to create a pom-pom, or buy one. With the darning needle, sew the pom-pom to the hat. Or use a snap fastener to have a removable (or interchangeable!) pom-pom.
+
+![Adding a pompom](img/twinkle-hat/adding_pompom.jpg)
+
+![](img/twinkle-hat/with_pompom_2.jpg)
 
 ## Abbreviations
 
@@ -112,3 +118,5 @@ Rd - Round
 Sl - Slip stitch (unless indicated otherwise, always slip purlwise)
 
 sts - stitches
+
+_This post contains affiliate links to products I recommend. If you purchase something from this page, I may receive a small percentage of the sale at no extra cost to you._
