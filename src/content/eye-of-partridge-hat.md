@@ -2,7 +2,7 @@
 title: 'Eye of Partridge Hat'
 author: Steffi
 tags: ['Pattern', 'Knitting']
-image: img/twinkle-hat/finished_hat.jpg
+image: img/eye-of-partridge-hat/finished_hat.jpg
 date: '2019-09-27T10:00:00.000Z'
 draft: false
 ---
@@ -11,9 +11,9 @@ The Eye of Partridge Hat is a simple hat that is worked in the round and uses a 
 
 The stitch used to create the squishy texture is called 'Eye of Partridge' and is often used to enforce the heel of a sock. I love the subtle texture it creates and wanted to show off the stitch in a different place than the heel of a sock, which, let's be honest, not many will see.
 
-![The Eye of Partridge Hat](img/twinkle-hat/with_pompom.jpg)
+![The Eye of Partridge Hat](img/eye-of-partridge-hat/with_pompom.jpg)
 
-![Grab a cup of tea and let's make a hat!](img/twinkle-hat/finished_hat.jpg)
+![Grab a cup of tea and let's make a hat!](img/eye-of-partridge-hat/finished_hat.jpg)
 
 ## Materials
 
@@ -25,7 +25,7 @@ The stitch used to create the squishy texture is called 'Eye of Partridge' and i
 - [Measuring tape](https://www.lovecrafts.com/en-gb/p/hemline-spring-loaded-tape-measure?utm_medium=affiliate&a_aid=47afbd68)
 - Optional: [pom-pom maker](https://www.lovecrafts.com/en-gb/p/addi-moon-pom-pom-maker?utm_medium=affiliate&a_aid=47afbd68) or finished pom-pom
 
-![The yarn I used: "Freia Ombré" in "Aloha"](img/twinkle-hat/freia_yarn.png)
+![The yarn I used: "Freia Ombré" in "Aloha"](img/eye-of-partridge-hat/freia_yarn.png)
 
 ## Gauge
 
@@ -48,7 +48,7 @@ Unstretched: circumference: 19''
 - The pattern uses a stitch to decrease two stitches at once. This helps to preserve the Eye of Partridge pattern. I chose the "Sl2-K1-P2sso" to do so, but feel free to use another double decrease. [TinCanKnits has a great how-to explaining the Sl2-K1-P2sso](https://blog.tincanknits.com/2016/01/21/central-double-decrease/)
 - If you'd like to adjust the number of stitches for the cast-on, make sure it's a multiple of two. For the decrease, place the four decrease points (Sl2-K1-P2sso) equidistant in the row - the exact placement doesn't matter
 
-![Hat in Progress](img/twinkle-hat/hat_in_progress.jpg)
+![Hat in Progress](img/eye-of-partridge-hat/hat_in_progress.jpg)
 
 ## Pattern
 
@@ -97,9 +97,9 @@ Pull tight, make a knot and weave in ends.
 
 Optional: Add a pom-pom: use some yarn and a pom-pom maker to create a pom-pom, or buy one. With the darning needle, sew the pom-pom to the hat. Or use a snap fastener to have a removable (or interchangeable!) pom-pom.
 
-![Adding a pompom](img/twinkle-hat/adding_pompom.jpg)
+![Adding a pompom](img/eye-of-partridge-hat/adding_pompom.jpg)
 
-![](img/twinkle-hat/with_pompom_2.jpg)
+![](img/eye-of-partridge-hat/with_pompom_2.jpg)
 
 ## Abbreviations
 
