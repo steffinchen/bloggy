@@ -17,6 +17,7 @@
     "gatsby-plugin-emotion": "^4.1.9",
     "gatsby-plugin-feed": "^2.3.15",
     "gatsby-plugin-google-analytics": "^2.1.19",
+    "gatsby-plugin-just-comments": "^0.2.3",
     "gatsby-plugin-manifest": "^2.2.4",
     "gatsby-plugin-offline": "^2.2.4",
     "gatsby-plugin-postcss": "^2.1.10",

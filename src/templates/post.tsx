@@ -18,6 +18,7 @@ import { colors } from '../styles/colors';
 import { inner, outer, SiteHeader, SiteMain } from '../styles/shared';
 import config from '../website-config';
 import SocialLinks from '../components/header/SocialLinks';
+import Comments from '../components/Comments';
 
 const PostTemplate = css`
   .site-main {
@@ -301,6 +302,7 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
               )}
               <PostContent htmlAst={post.htmlAst} />
 
+              <Comments />
               {/* The big email subscribe modal content */}
               {config.showSubscribe && <Subscribe title={config.title} />}
 
