@@ -7,9 +7,9 @@ date: '2019-09-27T10:00:00.000Z'
 draft: false
 ---
 
-The Eye of Partridge Hat is a simple hat that is worked in the round and uses a combination of knit and slip stitches to create a beautiful texture. It uses a light-weight yarn and it's perfect to keep you warm during those chilly fall days.
+The Eye of Partridge Hat is a simple hat that is worked in the round and uses a combination of knit and slip stitches to create a beautiful texture. It uses a light-weight yarn, and it's perfect for keeping you warm during those chilly fall days.
 
-The stitch used to create the squishy texture is called 'Eye of Partridge' and is often used to enforce the heel of a sock. I love the subtle texture it creates and wanted to show off the stitch in a different place than the heel of a sock, which, let's be honest, not many will see.
+The stitch used to create the squishy texture is called 'Eye of Partridge' and is often used to enforce the heel of a sock. I love the subtle texture it creates and wanted to show off the stitch in a different place than the heel of a sock, which sadly not many will see.
 
 ![The Eye of Partridge Hat](img/eye-of-partridge-hat/with_pompom.jpg)
 
