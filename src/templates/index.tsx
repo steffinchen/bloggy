@@ -113,6 +113,7 @@ const IndexPage: React.FC<IndexProps> = props => {
         <meta name="twitter:title" content={config.title} />
         <meta name="twitter:description" content={config.description} />
         <meta name="twitter:url" content={config.siteUrl} />
+        <meta name="p:domain_verify" content="47e07120c7c53b44cb0f5aa64c7ea293" />
       </Helmet>
       <Wrapper>
         <header
