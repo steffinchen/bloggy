@@ -5,6 +5,7 @@ import { css } from '@emotion/core';
 import config from '../../website-config';
 import Facebook from '../icons/facebook';
 import Instagram from '../icons/instagram';
+import Pinterest from '../icons/pinterest';
 import SubscribeModal from '../subscribe/SubscribeOverlay';
 import Email from '../icons/email';
 
@@ -72,6 +73,17 @@ class Social extends React.Component {
             rel="noopener noreferrer"
           >
             <Facebook />
+          </a>
+        )}
+        {config.pinterest && (
+          <a
+            css={Icon}
+            href={config.pinterest}
+            target="_blank"
+            title="Pinterest"
+            rel="noopener noreferrer"
+          >
+            <Pinterest />
           </a>
         )}
         {config.email && (

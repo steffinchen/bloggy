@@ -20,6 +20,8 @@ export interface WebsiteConfig {
    * full url, no username
    */
   instagram?: string;
+
+  pinterest?: string;
   /** Email address */
   email?: string;
   /**
@@ -59,6 +61,7 @@ const config: WebsiteConfig = {
   siteUrl: 'https://skillfullytangled.com',
   facebook: 'https://www.facebook.com/skillfullytangled',
   instagram: 'https://instagram.com/skillfullytangled',
+  pinterest: 'https://www.pinterest.ch/skillfullytangled/',
   email: 'skillfullytangled@gmail.com',
   showSubscribe: false,
   mailchimpAction:

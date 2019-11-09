@@ -88,6 +88,11 @@ const Footer: React.FC = () => {
               Instagram
             </a>
           )}
+          {config.pinterest && (
+            <a href={config.pinterest} target="_blank" rel="noopener noreferrer">
+              Pinterest
+            </a>
+          )}
         </SiteFooterNav>
       </div>
     </footer>
