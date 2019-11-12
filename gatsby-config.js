@@ -39,8 +39,8 @@ module.exports = {
         postCssPlugins: [require('postcss-color-function'), require('cssnano')()],
       },
     },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -79,6 +79,23 @@ module.exports = {
         sampleRate: 100,
         // Determines how often site speed tracking beacons will be sent
         siteSpeedSampleRate: 10,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /svg/,
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-pinterest`,
+      options: {
+        // Set to true to display a bigger button
+        tall: true,
+        // Set to true to hide the text and display only a round P button
+        round: true,
       },
     },
   ],

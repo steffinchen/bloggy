@@ -19,6 +19,7 @@ import { inner, outer, SiteHeader, SiteMain } from '../styles/shared';
 import config from '../website-config';
 import SocialLinks from '../components/header/SocialLinks';
 import Comments from '../components/Comments';
+import SocialShare from '../components/share/SocialShare';
 
 const PostTemplate = css`
   .site-main {
@@ -301,7 +302,7 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
                 </PostFullImage>
               )}
               <PostContent htmlAst={post.htmlAst} />
-
+              <SocialShare postPath={props.pathContext.slug} />
               <Comments />
               {/* The big email subscribe modal content */}
               {config.showSubscribe && <Subscribe title={config.title} />}
