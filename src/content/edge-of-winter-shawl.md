@@ -39,6 +39,7 @@ Depth: 22'' / 56cm
 ## Notes
 
 - The color switches are not explicitly stated - apart from the beginning - to make the pattern more comfortable to read. Always knit a stitch with the same color it occurs in (e.g., if you are about to knit a 'color A' stitch, use color A ). This also goes for the cabling sections
+- When switching colors, bring the new color up from underneath the old one. This twists the strands together, preventing holes from forming
 - The sample is knit in [La Bien Aimée's Merino DK](https://www.labienaimee.com/collections/la-bien-aimee/products/merino-dk?variant=21944855691348) in 'Yellow Brick Road Graffiti' and 'San Tokki'
 
 ## Overview
