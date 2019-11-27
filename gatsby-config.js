@@ -90,7 +90,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-pinterest`,
+      resolve: 'gatsby-plugin-pinterest',
       options: {
         // Set to true to display a bigger button
         tall: true,
