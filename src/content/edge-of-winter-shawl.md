@@ -11,6 +11,10 @@ The Edge of Winter Shawl is a triangular wrap knit with two contrasting colors t
 
 The shawl uses two skeins of DK weight yarn and features beginner-friendly cabling. There is only one cable in the center, and most of the pattern is just simple stockinette with some increases. So if you have admired cables before but didn't dare, this is a fabulous first cable project!
 
+- [Add pattern to your Ravelry queue here](https://www.ravelry.com/patterns/library/edge-of-winter-shawl)
+- [Get ad-free, printable PDF pattern on Etsy here](https://www.etsy.com/listing/742522840/edge-of-winter-shawl-knit-pattern)
+- [Pin it to your Pinterest board here](https://www.pinterest.com/pin/684617580839800238/)
+
 ![Edge of Winter Shawl](img/edge-of-winter/edge-of-winter-03.jpg)
 
 ![](img/edge-of-winter/edge-of-winter-11.jpg)

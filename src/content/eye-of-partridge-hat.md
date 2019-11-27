@@ -11,6 +11,10 @@ The Eye of Partridge Hat is a simple hat that is worked in the round and uses a 
 
 The stitch used to create the squishy texture is called 'Eye of Partridge' and is often used to enforce the heel of a sock. I love the subtle texture it creates and wanted to show off the stitch in a different place than the heel of a sock, which sadly not many will see.
 
+- [Add pattern to your Ravelry queue here](https://www.ravelry.com/patterns/library/eye-of-partridge-hat)
+- [Get ad-free, printable PDF pattern on Etsy here](https://www.etsy.com/listing/756391905/eye-of-partridge-hat-knit-pattern)
+- [Pin it to your Pinterest board here](https://www.pinterest.com/pin/684617580839493005/)
+
 ![The Eye of Partridge Hat](img/eye-of-partridge-hat/with_pompom.jpg)
 
 ![Grab a cup of tea and let's make a hat!](img/eye-of-partridge-hat/finished_hat.jpg)
