@@ -41,6 +41,7 @@ Depth: 22'' / 56cm
 - The color switches are not explicitly stated - apart from the beginning - to make the pattern more comfortable to read. Always knit a stitch with the same color it occurs in (e.g., if you are about to knit a 'color A' stitch, use color A ). This also goes for the cabling sections
 - When switching colors, bring the new color up from underneath the old one. This twists the strands together, preventing holes from forming
 - The sample is knit in [La Bien Aimée's Merino DK](https://www.labienaimee.com/collections/la-bien-aimee/products/merino-dk?variant=21944855691348) in 'Yellow Brick Road Graffiti' and 'San Tokki'
+- If you’d like the shawl to be larger, just keep repeating the 8 rows of the main section
 
 ## Overview
 
@@ -101,7 +102,7 @@ Step-by-step images:
 
 You should now have the following on your needles:
 
-- 3 sts - marker - 3 sts - marker - 6 sts - marker - 3 sts - 3 sts (total 18 sts, first half of stitches in color A, second half in color B)
+- 3 sts - marker - 3 sts - marker - 6 sts - marker - 3 sts - marker - 3 sts (total 18 sts, one half of stitches in color A, other half in color B)
 
 From now on, all the increases happen in the stockinette section.
 
@@ -139,7 +140,7 @@ Cut yarn and weave in ends. Block.
 
 ## Abbreviations
 
-C3F - put 3 sts on cable needle, K3, K3 from cable needle
+C3F - put 3 sts on cable needle and hold cable needle _in front of work_, K3, K3 from cable needle
 
 CO - Cast on
 
