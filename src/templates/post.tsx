@@ -128,9 +128,8 @@ interface PageTemplateProps {
         fixed: any;
       };
     };
-    markdownRemark: {
-      html: string;
-      htmlAst: any;
+    mdx: {
+      body: string;
       excerpt: string;
       timeToRead: string;
       frontmatter: {
@@ -208,7 +207,9 @@ export interface PageContext {
 }
 
 const PageTemplate: React.FC<PageTemplateProps> = props => {
-  const post = props.data.markdownRemark;
+  console.log('TCL: props', props);
+  const post = props.data.mdx;
+  console.log('TCL: post', post);
   let width = '';
   let height = '';
   if (post.frontmatter.image && post.frontmatter.image.childImageSharp) {
@@ -301,7 +302,7 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
                   />
                 </PostFullImage>
               )}
-              <PostContent htmlAst={post.htmlAst} />
+              <PostContent htmlAst={post.body} />
               <SocialShare postPath={props.pathContext.slug} />
               <Comments />
               {/* The big email subscribe modal content */}
@@ -345,9 +346,8 @@ export const query = graphql`
         }
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      htmlAst
+    mdx(fields: { slug: { eq: $slug } }) {
+      body
       excerpt
       timeToRead
       frontmatter {
@@ -377,7 +377,7 @@ export const query = graphql`
         }
       }
     }
-    relatedPosts: allMarkdownRemark(
+    relatedPosts: allMdx(
       filter: { frontmatter: { tags: { in: [$primaryTag] }, draft: { ne: true } } }
       limit: 3
     ) {

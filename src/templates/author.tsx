@@ -88,7 +88,7 @@ interface AuthorTemplateProps {
         fluid: any;
       };
     };
-    allMarkdownRemark: {
+    allMdx: {
       totalCount: number;
       edges: Array<{
         node: PageContext;
@@ -120,7 +120,7 @@ interface AuthorTemplateProps {
 const Author: React.FC<AuthorTemplateProps> = props => {
   const author = props.data.authorYaml;
 
-  const edges = props.data.allMarkdownRemark.edges.filter(edge => {
+  const edges = props.data.allMdx.edges.filter(edge => {
     const isDraft = edge.node.frontmatter.draft !== true || process.env.NODE_ENV === 'development';
     return isDraft && edge.node.frontmatter.author && edge.node.frontmatter.author.id === author.id;
   });
@@ -280,7 +280,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allMarkdownRemark(
+    allMdx(
       filter: { frontmatter: { draft: { ne: true } } }
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 2000

@@ -7,7 +7,7 @@ module.exports = {
     siteUrl: 'https://skillfullytangled.com', // full path to blog - no ending slash
   },
   mapping: {
-    'MarkdownRemark.frontmatter.author': 'AuthorYaml',
+    'Mdx.frontmatter.author': 'AuthorYaml',
   },
   plugins: [
     'gatsby-plugin-sitemap',
@@ -32,7 +32,7 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-yaml',
-    'gatsby-plugin-feed',
+    'gatsby-plugin-feed-mdx',
     {
       resolve: 'gatsby-plugin-postcss',
       options: {
@@ -42,9 +42,10 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: 'gatsby-plugin-mdx',
       options: {
-        plugins: [
+        extensions: ['.mdx', '.md'],
+        gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -61,6 +62,7 @@ module.exports = {
             },
           },
         ],
+        plugins: ['gatsby-remark-images'],
       },
     },
     {
