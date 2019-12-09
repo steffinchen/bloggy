@@ -21,7 +21,7 @@ import {
   SiteHeader,
   SiteHeaderContent,
   SiteMain,
-  SiteTitle,
+  SiteTitle
 } from '../styles/shared';
 import { PageContext } from './post';
 import styled from '@emotion/styled';
@@ -105,21 +105,34 @@ const IndexPage: React.FC<IndexProps> = props => {
         <meta property="og:title" content={config.title} />
         <meta property="og:description" content={config.description} />
         <meta property="og:url" content={config.siteUrl} />
-        {config.facebook && <meta property="article:publisher" content={config.facebook} />}
+        {config.facebook && (
+          <meta property="article:publisher" content={config.facebook} />
+        )}
         {config.googleSiteVerification && (
-          <meta name="google-site-verification" content={config.googleSiteVerification} />
+          <meta
+            name="google-site-verification"
+            content={config.googleSiteVerification}
+          />
         )}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={config.title} />
         <meta name="twitter:description" content={config.description} />
         <meta name="twitter:url" content={config.siteUrl} />
-        <meta name="p:domain_verify" content="47e07120c7c53b44cb0f5aa64c7ea293" />
+        <meta
+          name="p:domain_verify"
+          content="47e07120c7c53b44cb0f5aa64c7ea293"
+        />
+        <script
+          data-ad-client="ca-pub-9362348170874328"
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        ></script>
       </Helmet>
       <Wrapper>
         <header
           css={[outer, SiteHeader]}
           style={{
-            background: `linear-gradient(${colors.iceberg}, #fff 60%)`,
+            background: `linear-gradient(${colors.iceberg}, #fff 60%)`
           }}
         >
           <HeaderInner css={inner}>
