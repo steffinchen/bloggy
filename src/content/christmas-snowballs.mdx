@@ -29,6 +29,7 @@ And using the snowballs as tree ornaments is only the beginning. They could also
 ## Notes
 - You can enter your own gauge (how many stitches you need per 4"/10cm) and how big you'd like the ball to be in the input boxes below. The number of stitches for cast on will adjust automatically. Or you can use the pre-filled defaults
 - The final size of your snowball will also depend on how much you stuff it as knitted fabric is quite stretchy
+- Measuring gauge can be tricky with teddy or faux fur yarn. Use your yarn's label as guidance
 
 
 ## Pattern
@@ -36,7 +37,10 @@ And using the snowballs as tree ornaments is only the beginning. They could also
 <Observe>
 {({ setState, ...state }) => {
     const calcCO = (gauge, diameter) => {
-        return Math.round(gauge /4 * (3.14 * diameter / 2));
+        const radius = diameter /2;
+        const pi = 3.14159;
+        const circumference = radius * 2 * pi;
+        return Math.round(gauge/4 * circumference);
     }
     return (
         <React.Fragment>
