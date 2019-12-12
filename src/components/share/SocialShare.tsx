@@ -45,12 +45,14 @@ interface SocialShareProps {
 const SocialShare: React.FC<SocialShareProps> = ({ postPath }) => {
   const postUrl = config.siteUrl + postPath;
   setTimeout(() => {
-    if (window && window.PinUtils) {
-      // this replaces the below pinterest link with the actual save buttton
-      // hover save buttons on images work without this, but the save button at the
-      // bottom of the page only shows up when reloading the page so calling
-      // this build method explicitly seems to help
-      window.PinUtils.build();
+    if (typeof window !== 'undefined') {
+      if (window.PinUtils) {
+        // this replaces the below pinterest link with the actual save buttton
+        // hover save buttons on images work without this, but the save button at the
+        // bottom of the page only shows up when reloading the page so calling
+        // this build method explicitly seems to help
+        window.PinUtils.build();
+      }
     }
   }, 500);
   return (

@@ -22,8 +22,8 @@ The shawl uses two skeins of DK weight yarn and features beginner-friendly cabli
 ## Materials
 
 - 500yds / 460m DK yarn in two colors (so 250yds / 230m each)
-- [Size 5mm (US 8) circular knitting needles (40-47in / 100-120cm)](https://www.lovecrafts.com/en-gb/p/knitpro-symfonie-circular-needles-120cm)
-- [Cable needle](https://www.lovecrafts.com/en-gb/p/knit-pro-aluminum-cable-needles-set-of-2) (or a double-pointed needle)
+- [Size 5mm (US 8) circular knitting needles (40-47in / 100-120cm)](https://www.lovecrafts.com/en-gb/p/knitpro-symfonie-circular-needles-120cm?utm_medium=affiliate&a_aid=47afbd68)
+- [Cable needle](https://www.lovecrafts.com/en-gb/p/knit-pro-aluminum-cable-needles-set-of-2?utm_medium=affiliate&a_aid=47afbd68) (or a double-pointed needle)
 - [Stitch markers](https://www.lovecrafts.com/en-gb/p/knit-pro-locking-stitch-markers?utm_medium=affiliate&a_aid=47afbd68)
 - [Tapestry needle](https://www.lovecrafts.com/en-gb/p/knit-pro-tapestry-needle-set?utm_medium=affiliate&a_aid=47afbd68)
 - [Scissors](https://www.lovecrafts.com/en-gb/p/hemline-stork-scissors?utm_medium=affiliate&a_aid=47afbd68)
