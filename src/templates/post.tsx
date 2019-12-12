@@ -20,6 +20,7 @@ import config from '../website-config';
 import SocialLinks from '../components/header/SocialLinks';
 import Comments from '../components/Comments';
 import SocialShare from '../components/share/SocialShare';
+import Ads from '../components/Ads';
 
 const PostTemplate = css`
   .site-main {
@@ -213,8 +214,12 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
   let width = '';
   let height = '';
   if (post.frontmatter.image && post.frontmatter.image.childImageSharp) {
-    width = post.frontmatter.image.childImageSharp.fluid.sizes.split(', ')[1].split('px')[0];
-    height = String(Number(width) / post.frontmatter.image.childImageSharp.fluid.aspectRatio);
+    width = post.frontmatter.image.childImageSharp.fluid.sizes
+      .split(', ')[1]
+      .split('px')[0];
+    height = String(
+      Number(width) / post.frontmatter.image.childImageSharp.fluid.aspectRatio
+    );
   }
 
   return (
@@ -228,26 +233,39 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
         <meta property="og:type" content="article" />
         <meta property="og:title" content={post.frontmatter.title} />
         <meta property="og:description" content={post.excerpt} />
-        <meta property="og:url" content={config.siteUrl + props.pathContext.slug} />
+        <meta
+          property="og:url"
+          content={config.siteUrl + props.pathContext.slug}
+        />
         {post.frontmatter.image && post.frontmatter.image.childImageSharp && (
           <meta
             property="og:image"
             content={`${config.siteUrl}${post.frontmatter.image.childImageSharp.fluid.src}`}
           />
         )}
-        <meta property="article:published_time" content={post.frontmatter.date} />
+        <meta
+          property="article:published_time"
+          content={post.frontmatter.date}
+        />
         {/* not sure if modified time possible */}
         {/* <meta property="article:modified_time" content="2018-08-20T15:12:00.000Z" /> */}
         {post.frontmatter.tags && (
           <meta property="article:tag" content={post.frontmatter.tags[0]} />
         )}
 
-        {config.facebook && <meta property="article:publisher" content={config.facebook} />}
-        {config.facebook && <meta property="article:author" content={config.facebook} />}
+        {config.facebook && (
+          <meta property="article:publisher" content={config.facebook} />
+        )}
+        {config.facebook && (
+          <meta property="article:author" content={config.facebook} />
+        )}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={post.frontmatter.title} />
         <meta name="twitter:description" content={post.excerpt} />
-        <meta name="twitter:url" content={config.siteUrl + props.pathContext.slug} />
+        <meta
+          name="twitter:url"
+          content={config.siteUrl + props.pathContext.slug}
+        />
         {post.frontmatter.image && post.frontmatter.image.childImageSharp && (
           <meta
             name="twitter:image"
@@ -257,7 +275,9 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
         <meta name="twitter:label1" content="Written by" />
         <meta name="twitter:data1" content={post.frontmatter.author.id} />
         <meta name="twitter:label2" content="Filed under" />
-        {post.frontmatter.tags && <meta name="twitter:data2" content={post.frontmatter.tags[0]} />}
+        {post.frontmatter.tags && (
+          <meta name="twitter:data2" content={post.frontmatter.tags[0]} />
+        )}
         {width && <meta property="og:image:width" content={width} />}
         {height && <meta property="og:image:height" content={height} />}
       </Helmet>
@@ -265,7 +285,7 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
         <header
           css={[outer, SiteHeader]}
           style={{
-            background: `linear-gradient(${colors.iceberg}, #fff 80%)`,
+            background: `linear-gradient(${colors.iceberg}, #fff 80%)`
           }}
         >
           <div css={inner}>
@@ -285,7 +305,9 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
                   {post.frontmatter.tags && post.frontmatter.tags.length > 0 && (
                     <>
                       <DateDivider>/</DateDivider>
-                      <Link to={`/tags/${_.kebabCase(post.frontmatter.tags[0])}/`}>
+                      <Link
+                        to={`/tags/${_.kebabCase(post.frontmatter.tags[0])}/`}
+                      >
                         {post.frontmatter.tags[0]}
                       </Link>
                     </>
@@ -294,16 +316,18 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
                 <PostFullTitle>{post.frontmatter.title}</PostFullTitle>
               </PostFullHeader>
 
-              {post.frontmatter.image && post.frontmatter.image.childImageSharp && (
-                <PostFullImage>
-                  <Img
-                    style={{ height: '100%' }}
-                    fluid={post.frontmatter.image.childImageSharp.fluid}
-                  />
-                </PostFullImage>
-              )}
+              {post.frontmatter.image &&
+                post.frontmatter.image.childImageSharp && (
+                  <PostFullImage>
+                    <Img
+                      style={{ height: '100%' }}
+                      fluid={post.frontmatter.image.childImageSharp.fluid}
+                    />
+                  </PostFullImage>
+                )}
               <PostContent htmlAst={post.body} />
               <SocialShare postPath={props.pathContext.slug} />
+              <Ads />
               <Comments />
               {/* The big email subscribe modal content */}
               {config.showSubscribe && <Subscribe title={config.title} />}
@@ -321,11 +345,18 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
           <div css={inner}>
             <ReadNextFeed>
               {props.data.relatedPosts && (
-                <ReadNextCard tags={post.frontmatter.tags} relatedPosts={props.data.relatedPosts} />
+                <ReadNextCard
+                  tags={post.frontmatter.tags}
+                  relatedPosts={props.data.relatedPosts}
+                />
               )}
 
-              {props.pageContext.prev && <PostCard post={props.pageContext.prev} />}
-              {props.pageContext.next && <PostCard post={props.pageContext.next} />}
+              {props.pageContext.prev && (
+                <PostCard post={props.pageContext.prev} />
+              )}
+              {props.pageContext.next && (
+                <PostCard post={props.pageContext.next} />
+              )}
             </ReadNextFeed>
           </div>
         </aside>
@@ -378,7 +409,9 @@ export const query = graphql`
       }
     }
     relatedPosts: allMdx(
-      filter: { frontmatter: { tags: { in: [$primaryTag] }, draft: { ne: true } } }
+      filter: {
+        frontmatter: { tags: { in: [$primaryTag] }, draft: { ne: true } }
+      }
       limit: 3
     ) {
       totalCount
