@@ -208,9 +208,7 @@ export interface PageContext {
 }
 
 const PageTemplate: React.FC<PageTemplateProps> = props => {
-  console.log('TCL: props', props);
   const post = props.data.mdx;
-  console.log('TCL: post', post);
   let width = '';
   let height = '';
   if (post.frontmatter.image && post.frontmatter.image.childImageSharp) {
