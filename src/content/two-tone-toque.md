@@ -11,7 +11,7 @@ This is the big brother to my [Eye of Partridge Hat](/eye-of-partridge-hat), sui
 
 ## Yarn
 
-- DK yarn in two colors - main color (MC): 45yds (40m), contrast color (CC): 144yds (130m)
+- DK yarn in two colors - main color (MC): 144-160yds (130-147m), contrast color (CC): 45-50yds (40-46m)
 - Recommended: [Malabrigo Rios](https://www.lovecrafts.com/en-gb/p/malabrigo-rios?utm_medium=affiliate&a_aid=47afbd68) in Tormenta (MC) and Cereza (CC)
 
 ![The Two Tone Toque](img/two-tone-toque/finished_2.jpg)
@@ -72,7 +72,7 @@ If you don't like a provisional cast-on or don't have an additional set of needl
 
 Using 5mm (US 8) needles:
 
-Using a provisional cast-on, CO 92 (100) sts and join to work in the round.
+Using a provisional cast-on, CO 92 (100) sts with MC and join to work in the round.
 
 ### Brim
 
