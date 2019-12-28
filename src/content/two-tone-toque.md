@@ -7,7 +7,8 @@ date: '2019-12-27T10:00:00.000Z'
 draft: false
 ---
 
-This is the big brother to my [Eye of Partridge Hat](/eye-of-partridge-hat), suitable for colder winter weather. It is worked with DK weight yarn and features a double brim for extra warmth. It uses two contrasting colors and the Eye of Partridge stitch to create an exciting texture. Each row is only ever worked with one color, so no worries about holding two yarns at once!
+The Two Tone Toque is the big brother to my [Eye of Partridge Hat](/eye-of-partridge-hat), suitable for colder winter weather. It is worked with DK weight yarn and features a double brim for extra warmth. It uses two contrasting colors and the Eye of Partridge stitch to create an exciting texture. Each row is only ever worked with one color, so no worries about holding two yarns at once!
+
 
 ## Yarn
 
@@ -126,9 +127,11 @@ Summary: Decrease 8sts every 2nd row
 
 **Row 3:** With CC: \*Sl1, K1\* around
 
-**Row 4:** \*K until 3 sts before marker, Sl2-K1-P2sso\* around (dec 8sts)
+**Row 4:** With MC: \*K until 3 sts before marker, Sl2-K1-P2sso\* around (dec 8sts)
 
-Repeat Rows 1 - 4 until there are 12 sts left
+Size Small: Repeat Rows 1 - 4 _three_ more times until there are 20 sts left. Repeat Rows 1 & 2 once more (12 sts).
+
+Size Large: Repeat Rows 1 - 4 _four_ more times until there are 12 sts left.
 
 Cut yarn and using the tapestry needle, thread tail through remaining stitches.
 Pull tight, make a knot, and weave in ends.
