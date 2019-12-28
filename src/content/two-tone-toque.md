@@ -9,6 +9,9 @@ draft: false
 
 The Two Tone Toque is the big brother to my [Eye of Partridge Hat](/eye-of-partridge-hat), suitable for colder winter weather. It is worked with DK weight yarn and features a double brim for extra warmth. It uses two contrasting colors and the Eye of Partridge stitch to create an exciting texture. Each row is only ever worked with one color, so no worries about holding two yarns at once!
 
+- [Add pattern to your Ravelry queue here](https://www.ravelry.com/patterns/library/two-tone-toque-2)
+- [Get ad-free, printable PDF pattern on Etsy here](https://www.etsy.com/listing/751764354/two-tone-toque-knit-pattern-pdf)
+- [Pin it to your Pinterest board here](https://www.pinterest.ch/pin/684617580840686158/)
 
 ## Yarn
 
