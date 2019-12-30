@@ -7,7 +7,7 @@ date: '2019-12-27T10:00:00.000Z'
 draft: false
 ---
 
-The Two Tone Toque is the big brother to my [Eye of Partridge Hat](/eye-of-partridge-hat), suitable for colder winter weather. It is worked with DK weight yarn and features a double brim for extra warmth. It uses two contrasting colors and the Eye of Partridge stitch to create an exciting texture. Each row is only ever worked with one color, so no worries about holding two yarns at once!
+The Two Tone Toque is the big brother to my [Eye of Partridge Hat](/eye-of-partridge-hat), suitable for colder winter weather. It is worked with worsted weight yarn and features a double brim for extra warmth. It uses two contrasting colors and the Eye of Partridge stitch to create an exciting texture. Each row is only ever worked with one color, so no worries about holding two yarns at once!
 
 - [Add pattern to your Ravelry queue here](https://www.ravelry.com/patterns/library/two-tone-toque-2)
 - [Get ad-free, printable PDF pattern on Etsy here](https://www.etsy.com/listing/751764354/two-tone-toque-knit-pattern-pdf)
@@ -15,7 +15,7 @@ The Two Tone Toque is the big brother to my [Eye of Partridge Hat](/eye-of-partr
 
 ## Yarn
 
-- DK yarn in two colors - main color (MC): 144-160yds (130-147m), contrast color (CC): 45-50yds (40-46m)
+- Worsted weight yarn in two colors - main color (MC): 144-160yds (130-147m), contrast color (CC): 45-50yds (40-46m)
 - Recommended: [Malabrigo Rios](https://www.lovecrafts.com/en-gb/p/malabrigo-rios?utm_medium=affiliate&a_aid=47afbd68) in Tormenta (MC) and Cereza (CC)
 
 ![The Two Tone Toque](img/two-tone-toque/finished_2.jpg)
