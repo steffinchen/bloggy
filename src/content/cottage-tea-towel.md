@@ -74,6 +74,16 @@ If you want to modify this pattern or create something else with the Linen Stitc
 
 ![Linen Stitch: Wrong side (left), right side (right)](img/cottage-tea-towel/Front-Back.png)
 
+## How to 'Slip 1 with yarn in front / back' (slwyif / slwyib)
+
+To slip a stitch with yarn in front, hold your working yarn (blue in the picture) in front of your work, then slip the stitch purlwise.
+
+![Slip 1 with yarn in front (slwyif)](img/cottage-tea-towel/slwyif.png)
+
+To slip a stitch with yarn in back, hold your working yarn behind your work, then slip the stitch purlwise.
+
+![Slip 1 with yarn in back (slwyib)](img/cottage-tea-towel/slwyib.png)
+
 ## Pattern
 
 Using color A: CO 91 stitches
