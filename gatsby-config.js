@@ -1,13 +1,14 @@
+/* eslint-disable comma-dangle */
 const path = require('path');
 
 module.exports = {
   siteMetadata: {
     title: 'SkillfullyTangled',
     description: 'A blog about knitting and other yarn-related things',
-    siteUrl: 'https://skillfullytangled.com', // full path to blog - no ending slash
+    siteUrl: 'https://skillfullytangled.com' // full path to blog - no ending slash
   },
   mapping: {
-    'Mdx.frontmatter.author': 'AuthorYaml',
+    'Mdx.frontmatter.author': 'AuthorYaml'
   },
   plugins: [
     'gatsby-plugin-sitemap',
@@ -16,16 +17,16 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'content',
-        path: path.join(__dirname, 'src', 'content'),
-      },
+        path: path.join(__dirname, 'src', 'content')
+      }
     },
 
     'gatsby-transformer-json',
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://skillfullytangled.com',
-      },
+        siteUrl: 'https://skillfullytangled.com'
+      }
     },
     'gatsby-plugin-emotion',
     'gatsby-plugin-typescript',
@@ -36,8 +37,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-postcss',
       options: {
-        postCssPlugins: [require('postcss-color-function'), require('cssnano')()],
-      },
+        postCssPlugins: [
+          require('postcss-color-function'),
+          require('cssnano')()
+        ]
+      }
     },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
@@ -51,19 +55,25 @@ module.exports = {
             options: {
               maxWidth: 590,
               showCaptions: true,
-              withWebp: true,
-            },
+              withWebp: true
+            }
           },
           {
             resolve: 'gatsby-remark-external-links',
             options: {
               target: '_blank',
-              rel: 'nofollow noopener noreferrer',
-            },
+              rel: 'nofollow noopener noreferrer'
+            }
           },
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`]
+            }
+          }
         ],
-        plugins: ['gatsby-remark-images'],
-      },
+        plugins: ['gatsby-remark-images']
+      }
     },
     {
       resolve: 'gatsby-plugin-google-analytics',
@@ -80,16 +90,16 @@ module.exports = {
         // Specifies what percentage of users should be tracked
         sampleRate: 100,
         // Determines how often site speed tracking beacons will be sent
-        siteSpeedSampleRate: 10,
-      },
+        siteSpeedSampleRate: 10
+      }
     },
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
-          include: /svg/,
-        },
-      },
+          include: /svg/
+        }
+      }
     },
     {
       resolve: 'gatsby-plugin-pinterest',
@@ -97,8 +107,8 @@ module.exports = {
         // Set to true to display a bigger button
         tall: true,
         // Set to true to hide the text and display only a round P button
-        round: true,
-      },
-    },
-  ],
+        round: true
+      }
+    }
+  ]
 };

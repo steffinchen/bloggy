@@ -25,6 +25,10 @@ Another recent find of mine is the Linen Stitch, which is a knit stitch that res
 - Yardage: 170yds each
 - I used 'The Recycled Yarn' by [we are knitters](https://www.weareknitters.com/?utm_campaign=ambassadors&utm_medium=website&utm_source=AMBASSADOR_93425) in Natural and Sky Blue
 
+Use the code below to get 15% off from we are knitters!
+
+[![text](img/ambassadors-970x250-EN.gif)](https://www.weareknitters.com/?utm_campaign=ambassadors&utm_medium=website&utm_source=AMBASSADOR_93425)
+
 ## Materials
 
 - Size 6mm (US 10) [knitting needles](https://www.lovecrafts.com/en-us/p/addi-bamboo-single-point-needles-35cm?utm_medium=affiliate&a_aid=47afbd68)
