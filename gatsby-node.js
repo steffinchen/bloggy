@@ -191,7 +191,10 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
   // adds sourcemaps for tsx in dev mode
   if (stage === `develop` || stage === `develop-html`) {
     actions.setWebpackConfig({
-      devtool: 'eval-source-map'
+      devtool: 'eval-source-map',
+      resolve: {
+        modules: [path.resolve(__dirname, 'src'), 'node_modules']
+      }
     });
   }
 };

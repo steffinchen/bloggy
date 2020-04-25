@@ -3,7 +3,7 @@ module.exports = {
   env: {
     node: true,
     jest: true,
-    browser: true,
+    browser: true
   },
   extends: ['xo-space/esnext', 'xo-react/space', 'xo-typescript'],
   rules: {
@@ -15,6 +15,7 @@ module.exports = {
     'react/jsx-tag-spacing': 0,
     'react/prop-types': 0,
     'no-warning-comments': 0,
-    'complexity': 0,
-  },
+    complexity: 0,
+    'comma-dangle': 0
+  }
 };
