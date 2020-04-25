@@ -13,13 +13,17 @@ During a recent (online) yarn shopping, I came across 'The Recycled Yarn' from '
 
 Another recent find of mine is the Linen Stitch, which is a knit stitch that results in a woven-like texture. It works great for one, two or even three colors! Combine this with my need for some more dish towels in my kitchen, and tada - the Cottage Tea Towel is born!
 
-![](img/cottage-tea-towel/tea-towel-7.jpg)
+- [Add the 'Cottage Tea Towel' pattern to your Ravelry queue here](https://www.ravelry.com/patterns/library/)
+- [Get ad-free, printable PDF pattern on Etsy here](https://www.etsy.com/listing/783213806/cottage-tea-towel-knit-pattern-pdf)
+- [Pin it to your Pinterest board here](https://www.pinterest.ch/pin/684617580843748110/)
+
+![](img/cottage-tea-towel/tea-towel-8.jpg)
 
 ## Yarn
 
 - DK weight yarn in two colors
 - Yardage: 170yds each
-- I used 'The Recycled Yarn' by we are knitters in Natural and Sky Blue
+- I used 'The Recycled Yarn' by [we are knitters](https://www.weareknitters.com/?utm_campaign=ambassadors&utm_medium=website&utm_source=AMBASSADOR_93425) in Natural and Sky Blue
 
 ## Materials
 
@@ -28,7 +32,7 @@ Another recent find of mine is the Linen Stitch, which is a knit stitch that res
 - [Scissors](https://www.lovecrafts.com/en-us/p/hemline-stork-scissors?utm_medium=affiliate&a_aid=47afbd68)
 - [Measuring tape](https://www.lovecrafts.com/en-us/p/hemline-spring-loaded-tape-measure?utm_medium=affiliate&a_aid=47afbd68)
 
-![](img/cottage-tea-towel/tea-towel-8.jpg)
+![](img/cottage-tea-towel/tea-towel-7.jpg)
 
 ## Gauge
 
