@@ -2,7 +2,7 @@
 title: 'Harbor Top'
 author: Steffi
 tags: ['Pattern', 'Knitting']
-image: img/harbor-top/harbor-top-1.jpg
+image: img/harbor-top/harbor-top-1a.jpg
 date: '2020-05-03T10:00:00.000Z'
 draft: false
 ---
@@ -13,6 +13,10 @@ The Harbor Top with its loose fit, cotton yarn, and sleeve-less design make it a
 
 It is worked from the top down and features a simple construction that is beginner-friendly. It is worked flat to form the chest section and then worked in the round for the rest. Afterward, you seam a few stitches at the shoulders to finish it up.
 ![The Harbor Top](img/harbor-top/harbor-top-3.jpg)
+
+- [Add pattern to your Ravelry queue here](https://www.ravelry.com/patterns/library/harbor-top)
+- [Get ad-free, printable PDF pattern on Etsy here](https://www.etsy.com/listing/789839238/knit-pattern-simple-striped-t-shirt)
+- [Pin it to your Pinterest board here](https://www.pinterest.ch/pin/684617580844249775)
 
 ## Yarn
 
