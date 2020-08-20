@@ -54,6 +54,7 @@
     "react-helmet": "^5.2.1",
     "rebass": "^4.0.2",
     "rehype-react": "^4.0.1",
+    "remark-unwrap-images": "^2.0.0",
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
