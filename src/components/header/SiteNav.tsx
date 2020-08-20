@@ -94,8 +94,9 @@ class SiteNav extends React.Component<SiteNavProps> {
               <Link to="/">Home</Link>
             </li>
             <li role="menuitem">
-              <Link to="/tags/pattern/">Pattern</Link>
+              <Link to="/tags/pattern/">Patterns</Link>
             </li>
+            <li role="menuitem"><a href="https://shop.skillfullytangled.com" target="_blank">Yarn Shop</a></li>
             <li role="menuitem">
               <Link to="/tags/inspiration/">Inspiration</Link>
             </li>
