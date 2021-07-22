@@ -58,7 +58,7 @@ const config: WebsiteConfig = {
   coverImage: 'img/blog-cover.jpg',
   logo: 'img/icon_white.png',
   lang: 'en',
-  siteUrl: 'https://skillfullytangled.com',
+  siteUrl: 'https://blog.skillfullytangled.com',
   facebook: 'https://www.facebook.com/skillfullytangled',
   instagram: 'https://instagram.com/skillfullytangled',
   pinterest: 'https://www.pinterest.ch/skillfullytangled/',

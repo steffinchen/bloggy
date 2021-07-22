@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: 'SkillfullyTangled',
     description: 'A blog about knitting and other yarn-related things',
-    siteUrl: 'https://skillfullytangled.com', // full path to blog - no ending slash
+    siteUrl: 'https://blog.skillfullytangled.com', // full path to blog - no ending slash
   },
   mapping: {
     'Mdx.frontmatter.author': 'AuthorYaml',
@@ -25,7 +25,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://skillfullytangled.com',
+        siteUrl: 'https://blog.skillfullytangled.com',
       },
     },
     'gatsby-plugin-emotion',
